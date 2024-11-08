@@ -1,3 +1,22 @@
+// Colores
+
+$azul-marino: #122555;
+$azul: #2C56C5;
+$rojo: #BB2633;
+$texto-gris: gray;
+
+// Estilos textos
+$light: 300;
+$font-size-h1: 32px;
+$font-size-h2: 45px;
+$font-size-h3: 28px;
+$font-size-h4: 25px;
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +51,6 @@ span {
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 300;
 }
