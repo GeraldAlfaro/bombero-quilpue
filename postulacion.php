@@ -1,11 +1,12 @@
+<!-- Conectar pagina de wordpress con una pagina template de php ++++++++++++++++++ -->
 <?php
 /*
-Template Name: Contacto Empresas
+Template Name: Postulación
 */
 ?>
 
-<?php get_header(); ?>
 
+<?php get_header(); ?>
 
 <main>
     <section class="container-fluid mb-5">
@@ -37,7 +38,7 @@ Template Name: Contacto Empresas
         <div class="row py-5">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 contacto">
+                    <div class="col-lg-5 col-md-12 contacto">
                         <h2 class="fw-bolder mb-3">Contáctanos hoy</h2>
                         <p class="pb-5 border-bottom">Accede a oportunidades profesionales de alto nivel y amplía tu horizonte laboral con empresas líderes en el mercado. Regístrate ahora para explorar nuevas oportunidades y avanzar en tu carrera hacia el éxito.</p>
                         <h2 class="fw-bolder mb-3">¿Necesitas ayuda?</h2>
@@ -56,11 +57,11 @@ Template Name: Contacto Empresas
 
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-lg-7 col-md-12 margen-break-sm fondo-contacto ">
+                    <div class="col-lg-6 col-md-12 margen-break-sm fondo-contacto ">
                         <div class="formulario-contacto">
 
                             <h2 class="mb-5 text-center">Formulario de contacto</h2>
-                            <?php echo do_shortcode('[fluentform id="4"]'); ?>
+                            <?php echo do_shortcode('[fluentform id="3"]'); ?>
                         </div>
                     </div>
                 </div>

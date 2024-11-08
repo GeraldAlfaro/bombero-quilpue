@@ -8,12 +8,6 @@ add_theme_support('nav-menus');
 register_nav_menus(array('menu' => __('menu')));
 register_nav_menus(array('menu-footer' => __('menu-footer')));
 
-// CSS
-function mi_css_personalizado()
-{
-  wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0');
-}
-add_action('wp_enqueue_scripts', 'mi_css_personalizado');
 
 add_theme_support('custom-logo', array(
   'height' => 300,
@@ -107,7 +101,7 @@ function css_general()
 {
   wp_enqueue_style(
     'css',
-    get_parent_theme_file_uri('css/style.css')
+    get_parent_theme_file_uri('css/estilos.css')
   );
 
 }
@@ -139,7 +133,7 @@ add_action('wp_enqueue_scripts', 'mi_js_personalizado');
 function mi_js_personalizado()
 {
 
-  wp_register_script('main', get_stylesheet_directory_uri() . '/js/infraestructura.js', array('jquery'), '1.0.0', true);
+  wp_register_script('main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);
   wp_enqueue_script('main');
 }
 ?>

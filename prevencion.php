@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Soluciones
+Template Name: Prevención
 */
 ?>
 
