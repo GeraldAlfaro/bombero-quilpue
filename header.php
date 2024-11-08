@@ -15,40 +15,50 @@
     <!-- ICONOS FOTS AWESOME -->
     <script src="https://kit.fontawesome.com/c0e79807e2.js" crossorigin="anonymous"></script>
 
-    <!-- CSS link -->
-    <link rel="stylesheet" href="<?php echo get_theme_file_uri( 'style.css' ); ?>">
-
     <?php wp_head(); ?>
 
 </head>
 
 <body>
 
-<?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'medium' ); ?>
+<!-------------- Navbar ------------------>
 
-<nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid">
-    <a href="<?php echo home_url(); ?>">
-        <div class="logo">
-            <?php echo $custom_logo ?>
-        </div>
-    </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="menu">
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'menu',
-                'container' => false,
-                'menu_class' => '',
-                'fallback_cb' => '__return_false',
-                'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
-                'depth' => 2,
-                'walker' => new bootstrap_5_wp_nav_menu_walker()
-            ));
-            ?>
+<header>
+    <div class="arriba-del-nav text-white">
+        <img class="logo" src="<?php echo get_theme_file_uri("img/logo.png"); ?>" alt="logo">
+        <figure class="nombre-compania">
+            <img class="logo-100" src="<?php echo get_theme_file_uri("img/logo-100.png"); ?>" alt="logo-100">
+            <figcaption class="nombre-compañia-texto">
+                <h4>Conmemoración 100 años</h4>
+                <strong>Primera compañía de bomberos de Quilpué “Esteban Santic”</strong>
+            </figcaption>
+        </figure>
+        <a class="boton-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">Dona aquí!</a>
+        <div class="main-menu-logo-section">
+                <img class="main-menu-icon" src="<?php echo get_theme_file_uri("img/ui.png") ?>" alt="responsive-navbar">
         </div>
     </div>
-</nav>
+    <nav class="barra-nav">
+        <ul id="main-menu-link-container">
+            <img class="main-menu-close-icon" src="<?php echo get_theme_file_uri("img/close.png") ?>" alt="cerrar-navbar">
+            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+                <li>Inicio</li>
+            </a>
+            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+                <li>Historia</li>
+            </a>
+            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+                <li>Prevención</li>
+            </a>
+            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+                <li>Postulación</li>
+            </a>
+            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+                <li>Financiamiento</li>
+            </a>
+            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+                <li>Nosotros</li>
+            </a>
+        </ul>
+    </nav>
+</header>

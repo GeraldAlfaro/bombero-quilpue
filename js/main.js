@@ -1,23 +1,10 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-    $(".st1").click(function () {
-        $(".quien").prop("checked", true);
+window.addEventListener("load", function () {
+    document.querySelector(".main-menu-icon").addEventListener("click", () => {
+        document.querySelector("#main-menu-link-container").classList.toggle("show-menu");
+        document.querySelector("#main-menu-link-container").classList.remove("close-menu");
     })
-    $(".st2").click(function () {
-        $(".input-mision").prop("checked", true);
+    document.querySelector(".main-menu-close-icon").addEventListener("click", () => {
+        document.querySelector("#main-menu-link-container").classList.toggle("close-menu");
+        document.querySelector("#main-menu-link-container").classList.remove("show-menu");
     })
-    $(".st3").click(function () {
-        $(".vision").prop("checked", true);
-    })
-    $(".st4").click(function () {
-        $(".input-valores").prop("checked", true);
-    })
-    $(".st5").click(function () {
-        $(".reubicacion").prop("checked", true);
-    })
-    $("ul li").click(function () {
-        $(this).addClass("activo").siblings().removeClass("activo");
-    })
-    
 });
-
-

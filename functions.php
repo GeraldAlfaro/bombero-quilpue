@@ -101,7 +101,7 @@ function css_general()
 {
   wp_enqueue_style(
     'css',
-    get_parent_theme_file_uri('css/estilos.css')
+    get_parent_theme_file_uri('/css/estilos.css')
   );
 
 }
@@ -127,13 +127,13 @@ function fancybox_css()
 }
 
 
-//----------------Infraestructura.js--------------------
-add_action('wp_enqueue_scripts', 'mi_js_personalizado');
-
-function mi_js_personalizado()
+function bomberojs_enqueue_style()
 {
-
-  wp_register_script('main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);
-  wp_enqueue_script('main');
+    wp_enqueue_script(
+        'main',
+        get_parent_theme_file_uri('js/main.js')
+    );
 }
+add_action('wp_enqueue_scripts', 'bomberojs_enqueue_style');
+
 ?>
