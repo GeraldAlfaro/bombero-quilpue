@@ -1542,5 +1542,103 @@ header {
     color: #1F3E90;
 
   }
+  h2{
+    color: #1F3E90;
+
+  }
+  a{
+    text-decoration: none;
+
+  }
   
+}
+
+.prevencion-background1{
+      position: relative;
+      background: url(../img/img-prevencion2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 401px;
+      height: 163px;
+      margin: 0;
+      padding: 0;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 500ms ease-in-out;
+      :hover{
+        opacity: 0.6;
+        transition: 500ms ease-in-out;
+        transform: scale(1.1);
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+      }
+
+  h3{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.prevencion-background2{
+  position: relative;
+  background: url(../img/img-prevencion3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 401px;
+  height: 163px;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms ease-in-out;
+  :hover{
+    opacity: 0.6;
+    transition: 500ms ease-in-out;
+    transform: scale(1.1);
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+  }
+
+h3{
+color: white;
+text-decoration: none;
+
+}
+}
+
+
+
+.prevencion-background3{
+  position: relative;
+  background: url(../img/img-prevencion4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 401px;
+  height: 163px;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms ease-in-out;
+  :hover{
+    opacity: 0.6;
+    transition: 500ms ease-in-out;
+    transform: scale(1.1);
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+  }
+
+h3{
+color: white;
+
+}
 }

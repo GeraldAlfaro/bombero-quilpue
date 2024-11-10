@@ -23,6 +23,36 @@ Template Name: Prevención
                     </div>
 
                 </div>
+                <div class="row mt-5 ">
+                    <h2 class="mb-5">¿Cómo actuar?</h2>
+                    <div class="col-md-4">
+
+                        <a href="#">
+                            <div class="prevencion-background1">
+                                <h3>Incendio</h3>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <div class="prevencion-background2">
+                                <h3>Material peligroso</h3>
+
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <div class="prevencion-background3">
+                                <h3>Rescate</h3>
+
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
