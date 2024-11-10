@@ -22,8 +22,8 @@ $font-size-h4: 25px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Manrope", sans-serif;
-}
+    font-family: "Roboto", sans-serif;
+  }
 
 // ---------------------------------------------------------------- PLANTILLA COLUMNS -------------------------------------------------------------------------
 
@@ -1535,4 +1535,12 @@ header {
         padding-left: 0;
         margin: 0;
     }
+}
+
+.prevencion{
+  h1{
+    color: #1F3E90;
+
+  }
+  
 }

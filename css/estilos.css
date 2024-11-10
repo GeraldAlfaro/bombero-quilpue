@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-/* --------------- ESTILOS BOOTSTRAP --------------------- */
 .container,
 .container-fluid,
 .container-xxl,
@@ -1323,7 +1322,6 @@
   padding-left: 3rem !important;
 }
 
-/* --------------- FIN ESTILOS BOOTSTRAP --------------------- */
 /* --------------- GUIA DE ESTILO --------------------- */
 h1 {
   font-size: 2.5rem;
@@ -1500,4 +1498,7 @@ header {
     padding-left: 0;
     margin: 0;
   }
+}
+.prevencion h1 {
+  color: #1F3E90;
 }/*# sourceMappingURL=estilos.css.map */
