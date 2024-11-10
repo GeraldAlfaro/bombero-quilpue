@@ -5,6 +5,7 @@
   font-family: "Manrope", sans-serif;
 }
 
+/* --------------- ESTILOS BOOTSTRAP --------------------- */
 .container,
 .container-fluid,
 .container-xxl,
@@ -1322,6 +1323,7 @@
   padding-left: 3rem !important;
 }
 
+/* --------------- FIN ESTILOS BOOTSTRAP --------------------- */
 /* --------------- GUIA DE ESTILO --------------------- */
 h1 {
   font-size: 2.5rem;
