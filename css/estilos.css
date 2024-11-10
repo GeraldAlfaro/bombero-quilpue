@@ -111,7 +111,7 @@ p {
   cursor: pointer;
 }
 
-/* ----------------------------- Responsive Footer ----------------------------- */
+/* ----------------------------- Responsive Header ----------------------------- */
 @media (width < 990px) {
   .main-menu-icon {
     display: inline-block;
