@@ -25,7 +25,7 @@
 
 <header>
     <div class="bg-azul">
-        <div class="arriba-del-nav text-white">
+        <div class="arriba-del-nav">
             <img class="logo" src="<?php echo get_theme_file_uri("img/logo.png"); ?>" alt="logo">
             <figure class="nombre-compania">
                 <img class="logo-100" src="<?php echo get_theme_file_uri("img/logo-100.png"); ?>" alt="logo-100">

@@ -37,6 +37,12 @@ p {
 }
 
 /* ------------------------------------  Header  ---------------------------------------*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .bg-azul {
   background-color: #122555;
 }
@@ -49,6 +55,7 @@ p {
   height: 110px;
   margin: 0 auto;
   padding-left: 2rem;
+  color: white;
 }
 
 .logo {
@@ -79,6 +86,11 @@ p {
   padding: 10px 40px;
   text-decoration: none;
   border: solid 2px white;
+}
+
+.barra-nav {
+  box-shadow: 0px 25px 25px -4px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
 }
 
 .barra-nav ul {
