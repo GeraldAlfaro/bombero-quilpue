@@ -37,12 +37,18 @@ p {
 }
 
 /* ------------------------------------  Header  ---------------------------------------*/
+.bg-azul {
+  background-color: #122555;
+}
+
 .arriba-del-nav {
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 110px;
-  background-color: #122555;
+  margin: 0 auto;
+  padding-left: 2rem;
 }
 
 .logo {
@@ -156,6 +162,11 @@ p {
   .logo {
     width: 140px;
     height: 140px;
+    margin: 0;
+  }
+  .arriba-del-nav {
+    width: 100%;
+    padding-left: 0;
     margin: 0;
   }
 }/*# sourceMappingURL=estilos.css.map */

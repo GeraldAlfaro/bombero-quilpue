@@ -24,18 +24,20 @@
 <!-------------- Navbar ------------------>
 
 <header>
-    <div class="arriba-del-nav text-white">
-        <img class="logo" src="<?php echo get_theme_file_uri("img/logo.png"); ?>" alt="logo">
-        <figure class="nombre-compania">
-            <img class="logo-100" src="<?php echo get_theme_file_uri("img/logo-100.png"); ?>" alt="logo-100">
-            <figcaption class="nombre-compañia-texto">
-                <h4>Conmemoración 100 años</h4>
-                <strong>Primera compañía de bomberos de Quilpué “Esteban Santic”</strong>
-            </figcaption>
-        </figure>
-        <a class="boton-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">Dona aquí!</a>
-        <div class="main-menu-logo-section">
-                <img class="main-menu-icon" src="<?php echo get_theme_file_uri("img/ui.png") ?>" alt="responsive-navbar">
+    <div class="bg-azul">
+        <div class="arriba-del-nav text-white">
+            <img class="logo" src="<?php echo get_theme_file_uri("img/logo.png"); ?>" alt="logo">
+            <figure class="nombre-compania">
+                <img class="logo-100" src="<?php echo get_theme_file_uri("img/logo-100.png"); ?>" alt="logo-100">
+                <figcaption class="nombre-compañia-texto">
+                    <h4>Conmemoración 100 años</h4>
+                    <strong>Primera compañía de bomberos de Quilpué “Esteban Santic”</strong>
+                </figcaption>
+            </figure>
+            <a class="boton-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">Dona aquí!</a>
+            <div class="main-menu-logo-section">
+                    <img class="main-menu-icon" src="<?php echo get_theme_file_uri("img/ui.png") ?>" alt="responsive-navbar">
+            </div>
         </div>
     </div>
     <nav class="barra-nav">
