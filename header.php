@@ -43,22 +43,22 @@
     <nav class="barra-nav">
         <ul id="main-menu-link-container">
             <img class="main-menu-close-icon" src="<?php echo get_theme_file_uri("img/close.png") ?>" alt="cerrar-navbar">
-            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+            <a class="link-nav" href="<?php echo esc_url(home_url('home')); ?>">
                 <li>Inicio</li>
             </a>
-            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+            <a class="link-nav" href="<?php echo esc_url(home_url('historia')); ?>">
                 <li>Historia</li>
             </a>
-            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+            <a class="link-nav" href="<?php echo esc_url(home_url('prevencion')); ?>">
                 <li>Prevención</li>
             </a>
-            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+            <a class="link-nav" href="<?php echo esc_url(home_url('postulacion')); ?>">
                 <li>Postulación</li>
             </a>
-            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+            <a class="link-nav" href="<?php echo esc_url(home_url('financiamiento')); ?>">
                 <li>Financiamiento</li>
             </a>
-            <a class="link-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">
+            <a class="link-nav" href="<?php echo esc_url(home_url('nosotros')); ?>">
                 <li>Nosotros</li>
             </a>
         </ul>
