@@ -25,24 +25,28 @@ Template Name: Nosotros
     <section class="nosotros-links">
         <div class="container">
             <div class="row">
-                <a href="" class="col-md-3 border-voluntario">
+                <a href="" class="col-md-3 border-voluntario espaciado-responsive">
                         <img class="link-nosotros-normal" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-azul.png") ?>" alt="voluntarios azul">
                         <img class="link-nosotros-hover" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-rojo.png") ?>" alt="voluntarios rojo">
+                        <img class="link-nosotros-active" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-blanco.png") ?>" alt="voluntarios-blanco">
                         <h3 class="mt-3">Voluntarios de la Compañía</h3>
                 </a>
                 <a href="" class="col-md-3">
-                        <img class="link-nosotros-normal" src="<?php echo get_theme_file_uri("img/nosotros-brigada-azul.png") ?>" alt="brigada juvenil azul">
+                        <img class="link-nosotros-normal espaciado-responsive" src="<?php echo get_theme_file_uri("img/nosotros-brigada-azul.png") ?>" alt="brigada juvenil azul">
                         <img class="link-nosotros-hover" src="<?php echo get_theme_file_uri("img/nosotros-brigada-rojo.png") ?>" alt="brigada juvenil rojo">
+                        <img class="link-nosotros-active" src="<?php echo get_theme_file_uri("img/nosotros-brigada-blanco.png") ?>" alt="brigada juvenil blanco">
                         <h3 class="mt-3">Brigada Juvenil</h3>
                 </a>
                 <a href="" class="col-md-3">
-                        <img class="link-nosotros-normal" src="<?php echo get_theme_file_uri("img/nosotros-casino-azul.png") ?>" alt="casino azul">
+                        <img class="link-nosotros-normal espaciado-responsive" src="<?php echo get_theme_file_uri("img/nosotros-casino-azul.png") ?>" alt="casino azul">
                         <img class="link-nosotros-hover" src="<?php echo get_theme_file_uri("img/nosotros-casino-rojo.png") ?>" alt="casino rojo">
+                        <img class="link-nosotros-active" src="<?php echo get_theme_file_uri("img/nosotros-casino-blanco.png") ?>" alt="casino blanco">
                         <h3 class="mt-3">Casino “La Primera”</h3>
                 </a>
                 <a href="" class="col-md-3 border-centro">
                         <img class="link-nosotros-normal" src="<?php echo get_theme_file_uri("img/nosotros-centro-azul.png") ?>" alt="centro azul">
                         <img class="link-nosotros-hover" src="<?php echo get_theme_file_uri("img/nosotros-centro-rojo.png") ?>" alt="centro rojo">
+                        <img class="link-nosotros-active" src="<?php echo get_theme_file_uri("img/nosotros-centro-blanco.png") ?>" alt="centro blanco">
                         <h3 class="mt-3">Centro Cultural</h3>
                 </a>
             </div>

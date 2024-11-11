@@ -23,7 +23,7 @@
 <header>
     <div class="bg-azul">
         <div class="arriba-del-nav">
-            <img class="logo" src="<?php echo get_theme_file_uri("img/logo.png"); ?>" alt="logo">
+            <a href="<?php echo esc_url(home_url('home')); ?>"><img class="logo" src="<?php echo get_theme_file_uri("img/logo.png"); ?>" alt="logo"></a>
             <figure class="nombre-compania">
                 <img class="logo-100" src="<?php echo get_theme_file_uri("img/logo-100.png"); ?>" alt="logo-100">
                 <figcaption class="nombre-compañia-texto">

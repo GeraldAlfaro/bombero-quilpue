@@ -1380,7 +1380,7 @@ header {
   width: 160px;
   height: 161px;
   margin-top: 60px;
-  z-index: 99;
+  z-index: 2;
 }
 
 .logo-100 {
@@ -1449,64 +1449,6 @@ header {
   cursor: pointer;
 }
 
-/* ----------------------------- Responsive ----------------------------- */
-@media (width < 990px) {
-  .main-menu-icon {
-    display: inline-block;
-  }
-  .main-menu-close-icon {
-    display: inline-block;
-    margin: 20px 0;
-  }
-  .barra-nav ul {
-    position: absolute;
-    top: 30px;
-    right: -300px;
-    width: 300px;
-    height: 80vh;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #122555;
-    border-radius: 0px 0px 10px 0px;
-    z-index: 10;
-    padding-left: 0;
-  }
-  .link-nav {
-    color: white;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-  }
-  .show-menu {
-    transform: translateX(-300px);
-  }
-  .close-menu {
-    transform: translateX(300px);
-  }
-  .arriba-del-nav .nombre-compania {
-    display: none;
-  }
-}
-@media (width < 768px) {
-  .bg-nosotros .col-md-4 {
-    margin-top: 40px;
-  }
-}
-@media (width < 600px) {
-  .arriba-del-nav {
-    height: auto;
-  }
-  .logo {
-    width: 140px;
-    height: 140px;
-    margin: 0;
-  }
-  .arriba-del-nav {
-    width: 100%;
-    padding-left: 0;
-    margin: 0;
-  }
-}
 .prevencion h1 {
   color: #1F3E90;
 }
@@ -1658,8 +1600,12 @@ header {
 .nosotros-links .container .row .col-md-3 img {
   position: absolute;
   top: 30px;
+  transition: opacity 0.3s ease;
 }
 .nosotros-links .container .row .col-md-3 .link-nosotros-hover {
+  opacity: 0;
+}
+.nosotros-links .container .row .col-md-3 .link-nosotros-active {
   opacity: 0;
 }
 .nosotros-links .container .row .col-md-3:hover {
@@ -1674,6 +1620,20 @@ header {
 }
 .nosotros-links .container .row .col-md-3:hover .link-nosotros-hover {
   opacity: 1;
+}
+.nosotros-links .container .row .col-md-3:active {
+  background-color: #BB2633;
+  color: #fff;
+}
+.nosotros-links .container .row .col-md-3:active .link-nosotros-normal {
+  opacity: 0;
+}
+.nosotros-links .container .row .col-md-3:active .link-nosotros-hover {
+  opacity: 0;
+}
+.nosotros-links .container .row .col-md-3:active .link-nosotros-active {
+  opacity: 1;
+  z-index: 5;
 }
 .nosotros-links .container .row .border-voluntario {
   -webkit-border-top-left-radius: 10px;
@@ -1690,4 +1650,95 @@ header {
   -moz-border-radius-bottomright: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+/* ----------------------------- Responsive ----------------------------- */
+@media (width < 990px) {
+  .main-menu-icon {
+    display: inline-block;
+  }
+  .main-menu-close-icon {
+    display: inline-block;
+    margin: 20px 0;
+  }
+  .barra-nav ul {
+    position: absolute;
+    top: 30px;
+    left: -300px;
+    width: 300px;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #122555;
+    border-radius: 0px 0px 10px 0px;
+    z-index: 10;
+    padding-left: 0;
+  }
+  .link-nav {
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .show-menu {
+    transform: translateX(300px);
+    display: block;
+  }
+  .close-menu {
+    transform: translateX(300px);
+    display: none;
+  }
+  .arriba-del-nav .nombre-compania {
+    display: none;
+  }
+}
+@media (width < 768px) {
+  .bg-nosotros .col-md-4 {
+    margin-top: 40px;
+  }
+  .nosotros-links .container .row {
+    box-shadow: none;
+    margin-top: 40px;
+    padding: 0 40px;
+  }
+  .nosotros-links .container .row .col-md-3 {
+    margin-top: 0;
+  }
+  .nosotros-links .container .row .border-voluntario {
+    /* radio de borde superior izquierdo y derecho */
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* radio de borde inferior izquierdo */
+    border-bottom-left-radius: 0;
+  }
+  .nosotros-links .container .row .border-centro {
+    /* radio de borde inferior izquierdo y derecho */
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* radio de borde superior derecho */
+    border-top-right-radius: 0;
+  }
+}
+@media (width < 600px) {
+  .arriba-del-nav {
+    height: auto;
+  }
+  .logo {
+    width: 140px;
+    height: 140px;
+    margin: 0;
+  }
+  .arriba-del-nav {
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+  }
 }/*# sourceMappingURL=estilos.css.map */
