@@ -1427,16 +1427,18 @@ header {
 }
 
 @mixin boton{
+    width: 200px;
     color: white;
     border-radius: 40px;
     background-color: $rojo;
-    padding: 10px 40px;
+    padding: 10px 20px;
     text-decoration: none;
     border: solid 2px white
 }
 
 .boton-nav {
     @include boton;
+    width: auto;
 }
 
 .barra-nav {
@@ -1480,7 +1482,7 @@ header {
     display: none;
     cursor: pointer;
 }
-/* ----------------------------- Responsive Header ----------------------------- */
+/* ----------------------------- Responsive ----------------------------- */
 @media (width < 990px) {
     .main-menu-icon {
         display: inline-block;
@@ -1521,6 +1523,15 @@ header {
     }
 }
 
+@media (width < 768px) {
+    .bg-nosotros {
+        .col-md-4 {
+            margin-top: 40px;
+        }
+    }
+    
+}
+
 @media (width < 600px) {
     .arriba-del-nav {
         height: auto;
@@ -1552,6 +1563,8 @@ header {
   }
   
 }
+
+/* ----------------------------- Prevención ----------------------------- */
 
 .prevencion-background1{
       position: relative;
@@ -1641,4 +1654,100 @@ h3{
 color: white;
 
 }
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------- Nosotros ----------------------------- */
+
+.bg-nosotros {
+    background-image: url(../img/nosotros-background.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0 170px 0;
+    h1 {
+        margin-bottom: 1rem;
+    }
+    .col-md-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+}
+
+.boton-nosotros {
+    @include boton;
+    display: inline-flex;
+    align-items: center;
+}
+.icono-boton {
+    width: 25px;
+    height: auto;
+}
+
+.nosotros-links .container .row{
+    -webkit-box-shadow: 3px 25px 37px -21px rgba(0,0,0,0.45);
+    -moz-box-shadow: 3px 25px 37px -21px rgba(0,0,0,0.45);
+    box-shadow: 3px 25px 37px -21px rgba(0,0,0,0.45);
+    .col-md-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        position: relative;
+        border: solid 1px $azul-marino;
+        text-decoration: none;
+        color: $azul-marino;
+        padding-top: 150px;
+        text-align: center;
+        margin-top: -60px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        img {
+            position: absolute;
+            top: 30px;
+        }
+        .link-nosotros-hover {
+            opacity: 0;
+        }
+        &:hover {
+            .link-nosotros-normal {
+                opacity: 0;
+            }
+            .link-nosotros-hover {
+                opacity: 1;
+            } 
+            border: $rojo solid 1px;
+            transform: scale(1.1);
+            color: $rojo;
+            border-radius: 10px;
+            z-index: 3;
+        }
+    }
+    .border-voluntario {
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .border-centro {
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 }

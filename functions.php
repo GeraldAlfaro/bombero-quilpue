@@ -133,6 +133,10 @@ function bomberojs_enqueue_style()
         'main',
         get_parent_theme_file_uri('js/main.js')
     );
+    wp_enqueue_script(
+      'cssnosotros',
+      get_parent_theme_file_uri('css/nosotros.css')
+  );
 }
 add_action('wp_enqueue_scripts', 'bomberojs_enqueue_style');
 
