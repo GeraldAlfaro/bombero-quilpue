@@ -1706,6 +1706,88 @@ color: white;
 }
 
 
+/* ----------------------------- Secciones de la página nosotros ----------------------------- */
+
+.bg-voluntarios {
+  background-image: url(../img/secciones-nosotros-bg-voluntarios.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0;
+  border-top: solid 8px $azul;
+  text-align: center;
+}
+
+#buscador {
+  width: 50%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 40px;
+  transition: all .3s ease-in;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  transition: outline .2s ease;
+  &:focus {
+    outline: $rojo solid 2px;
+  }
+  &::placeholder {
+    font-weight: 600;
+  }
+}
+
+.seccion-voluntarios-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-boton-voluntarios {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    display: flex;
+    background-color: #fff;
+    border-radius: 1000px;
+    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15),
+      0 6px 12px 0 rgba(24, 94, 224, 0.15);
+    list-style: none;
+    position: relative;
+
+    input[type="radio"] {
+      display: none;
+    }
+    .tab {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: inherit;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .slider {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    border-radius: inherit;
+    background-color: $rojo;
+    z-index: 0;
+    transition: 0.25s ease;
+  }
+  input[type="radio"]:checked + label {
+    color: $texto-blanco;
+  }
+  input[id="humano"]:checked ~ .slider {
+    transform: translateX(0);
+  }
+  input[id="animal"]:checked ~ .slider {
+    transform: translateX(100%);
+  }
+}
 
 
 /* ----------------------------- Responsive ----------------------------- */
@@ -1788,6 +1870,9 @@ color: white;
       /* radio de borde superior derecho */
       border-top-right-radius: 0;
     }
+    }
+    #buscador {
+      margin-top: 40px;
     }
 }
 

@@ -1652,6 +1652,89 @@ header {
   border-bottom-right-radius: 10px;
 }
 
+/* ----------------------------- Secciones de la página nosotros ----------------------------- */
+.bg-voluntarios {
+  background-image: url(../img/secciones-nosotros-bg-voluntarios.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0;
+  border-top: solid 8px #2C56C5;
+  text-align: center;
+}
+
+#buscador {
+  width: 50%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 40px;
+  transition: all 0.3s ease-in;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  transition: outline 0.2s ease;
+}
+#buscador:focus {
+  outline: #BB2633 solid 2px;
+}
+#buscador::-moz-placeholder {
+  font-weight: 600;
+}
+#buscador::placeholder {
+  font-weight: 600;
+}
+
+.seccion-voluntarios-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-boton-voluntarios {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  display: flex;
+  background-color: #fff;
+  border-radius: 1000px;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  list-style: none;
+  position: relative;
+}
+.tab-boton-voluntarios input[type=radio] {
+  display: none;
+}
+.tab-boton-voluntarios .tab {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: inherit;
+  cursor: pointer;
+  z-index: 2;
+}
+.tab-boton-voluntarios .slider {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  border-radius: inherit;
+  background-color: #BB2633;
+  z-index: 0;
+  transition: 0.25s ease;
+}
+.tab-boton-voluntarios input[type=radio]:checked + label {
+  color: white;
+}
+.tab-boton-voluntarios input[id=humano]:checked ~ .slider {
+  transform: translateX(0);
+}
+.tab-boton-voluntarios input[id=animal]:checked ~ .slider {
+  transform: translateX(100%);
+}
+
 /* ----------------------------- Responsive ----------------------------- */
 @media (width < 990px) {
   .main-menu-icon {
@@ -1725,6 +1808,9 @@ header {
     border-bottom-left-radius: 10px;
     /* radio de borde superior derecho */
     border-top-right-radius: 0;
+  }
+  #buscador {
+    margin-top: 40px;
   }
 }
 @media (width < 600px) {
