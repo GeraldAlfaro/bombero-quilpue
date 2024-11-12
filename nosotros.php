@@ -25,7 +25,7 @@ Template Name: Nosotros
     <section class="nosotros-links">
         <div class="container">
             <div class="row">
-                <a href="" class="col-md-3 border-voluntario espaciado-responsive">
+                <a href="<?php echo get_permalink(get_page_by_path('nosotros/voluntarios-de-la-compania')); ?>" class="col-md-3 border-voluntario espaciado-responsive">
                         <img class="link-nosotros-normal" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-azul.png") ?>" alt="voluntarios azul">
                         <img class="link-nosotros-hover" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-rojo.png") ?>" alt="voluntarios rojo">
                         <img class="link-nosotros-active" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-blanco.png") ?>" alt="voluntarios-blanco">

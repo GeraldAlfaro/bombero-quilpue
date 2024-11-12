@@ -3,7 +3,7 @@ $post = $wp_query->post;
 if ( in_category('inicio') ) {
 include(TEMPLATEPATH . '/single_index.php'); } 
 
-//  --------------- SINGLE ADOPCION --------------
+//  --------------- SINGLE NOSOTROS --------------
 
 elseif ( in_category('adopcion') ) {
 include(TEMPLATEPATH . '/single_adopcion.php'); }
