@@ -2,8 +2,7 @@
 
 <!-- ----------------------FOOTER------------------- -->
 
-<div class="container-fluid">
-        <footer>
+        <footer class="container-fluid">
             <img class="camion-footer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/camion-footer.png" alt="">
             <div class="row">
                 <div class="col-md-11 mx-auto">
@@ -61,11 +60,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-</div>
-
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

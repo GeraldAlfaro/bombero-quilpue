@@ -1562,7 +1562,7 @@ footer .camion-footer {
   top: 0;
   right: 0;
   margin-top: -47px;
-  animation: camion 10s linear infinite;
+  animation: camion 20s linear infinite;
 }
 
 @keyframes camion {
@@ -1978,5 +1978,8 @@ footer .camion-footer {
     width: 100%;
     padding-left: 0;
     margin: 0;
+  }
+  .camion-footer {
+    animation: camion 10s linear infinite;
   }
 }/*# sourceMappingURL=estilos.css.map */
