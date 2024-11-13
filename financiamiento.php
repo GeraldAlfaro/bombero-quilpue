@@ -7,69 +7,70 @@ Template Name: Financiamiento
 <?php get_header(); ?>
 
 
-<main>
-    <section class="container-fluid mb-5">
+<main class="financiamiento">
 
-        <div class="row banner-contacto">
-            <div class="col-md-10 my-5 mx-auto d-flex justify-content-center flex-column align-items-center">
-                <div class="row ">
-                    <div class="col-md-12 mx-auto ">
-                        <h1 class="text-light fw-bolder mb-3">Contacto Personas</h1>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="container py-5">
-        <div class="row pb-5">
-            <div class="col-md-2 my-auto">
-                <hr class="border-2 opacity-100">
-            </div>
-            <div class="col-md-8">
-                <h3 class="text-center">Contacta con nosotros, te ayudaremos a responder cualquier duda que tengas</h3>
-            </div>
-            <div class="col-md-2 my-auto">
-                <hr class="border-2 opacity-100">
-            </div>
-        </div>
-        <div class="row py-5">
-            <div class="col-md-12">
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-md-12 mt-5">
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 contacto">
-                        <h2 class="fw-bolder mb-3">Contáctanos hoy</h2>
-                        <p class="pb-5 border-bottom">Accede a oportunidades profesionales de alto nivel y amplía tu horizonte laboral con empresas líderes en el mercado. Regístrate ahora para explorar nuevas oportunidades y avanzar en tu carrera hacia el éxito.</p>
-                        <h2 class="fw-bolder mb-3">¿Necesitas ayuda?</h2>
-                            <?php if (have_posts()): ?>
-                            <?php query_posts("category_name=contacto"); ?>
-                            <?php while (have_posts()): the_post(); ?>
+                    <h1 class="mb-4">Emergencias</h1>
 
-                                <p><?php the_content(); ?></p>
-                                <p><?php the_field('correo-contacto'); ?></p>
-                                <a href="<?php the_field('link-instagram'); ?>"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a><a href="<?php the_field('link-linkedin'); ?>"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
-
-                            <?php endwhile; ?>
-                            <?php else: ?>
-                            <?php endif; ?>
-                            <?php wp_reset_query(); ?>
-
+                    <div class="col-md-6">
+                        <span>
+                            <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.2288 0.947219H21.6384C22.3859 0.947219 22.9912 1.36994 22.9912 1.89444C22.9912 2.41893 22.3875 2.84166 21.6384 2.84166H16.8373C16.6169 3.60547 15.8694 4.23509 14.876 4.53703V13.2588H21.6384C22.3859 13.2588 22.9912 13.6816 22.9912 14.206C22.9912 14.7305 22.3875 15.1533 21.6384 15.1533H5.40789C4.66041 15.1533 4.05508 14.7305 4.05508 14.206C4.05508 13.6816 4.65881 13.2588 5.40789 13.2588H12.1703V4.53703C11.1769 4.23173 10.4294 3.60212 10.209 2.84166H5.40789C4.66041 2.84166 4.05508 2.41893 4.05508 1.89444C4.05508 1.36994 4.65881 0.947219 5.40789 0.947219H10.8175C11.434 0.37352 12.4147 0 13.5232 0C14.6316 0 15.6107 0.372401 16.2288 0.947219ZM18.5782 9.46995H24.6986L21.6384 5.79403L18.5782 9.46995ZM21.6384 12.3116C18.9791 12.3116 16.7686 11.3051 16.3134 9.97655C16.2032 9.65112 16.355 9.31674 16.5961 9.0271L20.6194 4.19706C20.8303 3.94209 21.22 3.78888 21.6384 3.78888C22.0569 3.78888 22.445 3.94544 22.6574 4.19706L26.6807 9.0271C26.9219 9.31674 27.0736 9.65112 26.9634 9.97655C26.5066 11.3051 24.2961 12.3116 21.6384 12.3116ZM5.35678 5.79403L2.29658 9.46995H8.42017L5.35518 5.79403H5.35678ZM0.0365755 9.97655C-0.0736298 9.65112 0.0781022 9.31674 0.319276 9.0271L4.34257 4.19706C4.5534 3.94209 4.94311 3.78888 5.36157 3.78888C5.78003 3.78888 6.16815 3.94544 6.38057 4.19706L10.4039 9.0271C10.645 9.31674 10.7968 9.65112 10.6866 9.97655C10.2266 11.3051 8.01608 12.3116 5.35678 12.3116C2.69748 12.3116 0.493369 11.3051 0.0365755 9.97655Z" fill="#BB2633"/>
+                            </svg>
+                            Ley de presupuesto
+                        </span>
+                        <p class="mt-4">Es un hecho que chile es reconocido por ser un país con varias emergencias de carácter natural, sin embargo las emergencias de todo indole son comunes, por lo que concideramos importante que estes preparado para cada una de estas y a su vez capacites a tus familiares con las instrucciones preventivas que se encuentran a continuación, dentro de cada uno de estos botones categorizados, encontraras información de una emergencia especifica. </p>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-lg-7 col-md-12 margen-break-sm fondo-contacto ">
-                        <div class="formulario-contacto">
+                    <div class="col-md-5">
+                    <span>
+                        <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.0262 13.4609C18.1113 13.4192 18.17 13.3909 18.2287 13.3626C19.0972 12.9243 19.9697 12.4926 20.8321 12.0476C21.4455 11.731 22.1095 11.6126 22.8221 11.646C23.4881 11.6776 24.0873 11.8576 24.5792 12.2376C25.0489 12.6009 25.3485 13.0442 25.4173 13.5792C25.5388 14.5225 25.0772 15.2358 24.1298 15.7442C22.8018 16.4558 21.4657 17.1558 20.1397 17.8691C19.1964 18.3757 18.168 18.6241 17.0424 18.6241C11.7547 18.6207 6.46488 18.6241 1.17714 18.6241C0.782385 18.6241 0.424067 18.5457 0.191261 18.2574C-0.0435701 17.9641 -0.0617895 17.6508 0.134578 17.3374C0.332969 17.0224 0.683188 16.9191 1.08402 16.8924C1.13665 16.8891 1.19131 16.8924 1.24597 16.8924C6.49727 16.8924 11.7466 16.8924 16.9979 16.8924C17.6862 16.8924 18.3137 16.7525 18.8927 16.4425C20.2632 15.7108 21.6398 14.9892 23.0124 14.2625C23.3363 14.0909 23.4375 13.8375 23.2533 13.6092C23.1824 13.5209 23.0508 13.4292 22.9314 13.4126C22.5791 13.3626 22.233 13.3709 21.905 13.5409C20.6013 14.2092 19.2895 14.8659 17.9837 15.5292C17.7327 15.6575 17.4716 15.7192 17.174 15.7175C15.2548 15.7125 13.3357 15.7175 11.4166 15.7125C11.0117 15.7125 10.6493 15.6125 10.4246 15.3042C10.0197 14.7475 10.4084 14.0792 11.1898 13.9892C11.2809 13.9792 11.372 13.9775 11.4631 13.9775C12.6555 13.9775 13.8459 13.9775 15.0382 13.9759C15.1617 13.9759 15.2872 13.9675 15.4067 13.9425C15.7285 13.8742 15.931 13.6359 15.9128 13.3659C15.8925 13.0709 15.6719 12.8609 15.3257 12.8142C15.2366 12.8026 15.1435 12.8009 15.0524 12.8009C12.8316 12.8009 10.6109 12.8043 8.39009 12.7976C7.95282 12.7976 7.56616 12.8943 7.20582 13.0926C6.09442 13.7026 4.97897 14.3075 3.86757 14.9192C3.6125 15.0592 3.34933 15.1358 3.03555 15.1308C2.39381 15.1192 1.75207 15.1308 1.11034 15.1258C0.737848 15.1225 0.405847 15.0292 0.191261 14.7575C-0.0435701 14.4625 -0.0597673 14.1492 0.138624 13.8375C0.33904 13.5242 0.685215 13.4076 1.0901 13.3992C1.61847 13.3892 2.14683 13.4026 2.6752 13.3926C2.79059 13.3909 2.92016 13.3592 3.0153 13.3076C4.09431 12.7293 5.16724 12.1443 6.2422 11.5576C6.88394 11.2076 7.5945 11.0626 8.35365 11.0626C10.6007 11.0626 12.8498 11.056 15.0969 11.0643C16.3177 11.0693 17.2266 11.5276 17.757 12.4376C17.8987 12.6793 17.9311 12.9642 18.008 13.2309C18.0262 13.2942 18.0202 13.3626 18.0283 13.4592L18.0262 13.4609Z" fill="#BB2633"/>
+                        <path d="M14.3041 3.11292C14.1259 3.08292 13.9457 3.05625 13.7696 3.02291C13.2473 2.92458 12.721 2.84126 12.1906 2.96626C12.0387 3.00125 11.891 3.06625 11.7594 3.13958C11.6076 3.22624 11.6217 3.34291 11.7877 3.40957C11.976 3.48457 12.1724 3.5479 12.3728 3.60123C12.8485 3.7279 13.3404 3.82122 13.802 3.97455C14.2231 4.11455 14.6381 4.28955 15.0126 4.49954C15.545 4.79953 15.8021 5.26118 15.8689 5.77782C15.9863 6.68946 15.381 7.5461 14.3688 7.88109C14.215 7.93275 14.0551 7.97442 13.8931 8.00942C13.802 8.02942 13.7777 8.06107 13.7716 8.13607C13.7554 8.33773 13.7595 8.54773 13.6927 8.73939C13.5651 9.09938 13.1178 9.32603 12.6683 9.29604C12.1622 9.26437 11.7897 9.00438 11.7108 8.61273C11.6784 8.45607 11.6804 8.29607 11.6764 8.13607C11.6764 8.06274 11.648 8.02941 11.559 8.00608C11.1237 7.89609 10.6804 7.79609 10.2573 7.65942C9.79976 7.5111 9.5042 7.22944 9.55683 6.74612C9.61351 6.22281 10.1986 5.82948 10.9456 6.01114C11.2755 6.09114 11.5934 6.20115 11.9234 6.27948C12.3444 6.37781 12.7736 6.4478 13.2129 6.36613C13.3425 6.34113 13.4741 6.30948 13.5935 6.25948C13.8344 6.15948 13.8648 5.93948 13.634 5.83615C13.3384 5.70449 13.0186 5.60283 12.7007 5.5145C12.0894 5.34284 11.4679 5.20618 10.8788 4.97785C10.0953 4.67453 9.67424 4.16454 9.58517 3.48123C9.47383 2.64626 10.0164 1.83796 10.895 1.5163C11.1055 1.43964 11.3221 1.36797 11.5387 1.30464C11.6399 1.27464 11.6744 1.23632 11.6804 1.14465C11.6926 0.942993 11.6986 0.734659 11.7695 0.542999C11.8991 0.191344 12.3444 -0.0286467 12.7898 0.0030189C13.2878 0.0380177 13.6623 0.29634 13.7413 0.677994C13.7716 0.829655 13.7757 0.986321 13.7757 1.14132C13.7757 1.23465 13.8101 1.26465 13.9235 1.28798C14.2312 1.34964 14.549 1.39964 14.8324 1.50964C15.2697 1.67797 15.4681 2.07629 15.3244 2.46794C15.1867 2.84126 14.881 3.10625 14.3122 3.11125L14.3041 3.11292Z" fill="#BB2633"/>
+                        </svg>
 
-                            <h2 class="mb-5 text-center">Formulario de contacto</h2>
-                            <?php echo do_shortcode('[fluentform id="4"]'); ?>
-                        </div>
+                        Donaciones
+                    </span>
+                    <p class="mt-4">Cada cuerpo de bomberos y cada compañía recibe aportes voluntarios de la comunidad y de empresas privadas. Dentro de los aportes más comunes son: venta de rifa, calendarios, platos únicos, donación particulares, entre otros.</p>
                     </div>
+
                 </div>
             </div>
         </div>
-        <div class="row my-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6658.766601586628!2d-70.648687!3d-33.439319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a3ce6d6bf3%3A0xeb51974a4c874c2d!2sHu%C3%A9rfanos%20835%2C%20901%2C%208320176%20Santiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sus!4v1730135075255!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+
     </section>
+    <section class="financiamiento-links bg-financiamiento">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-10 mx-auto my-4">
+                    <div class="row ">
+                        <h1 class="mb-5">Costos de equipo</h1>
+                        <div class="col-md-1"></div>
+                                <a href="<?php echo get_permalink(get_page_by_path('nosotros/voluntarios-de-la-compania')); ?>" class="col-md-4 border-voluntario espaciado-responsive">
+                                    <img class="link-nosotros-normal" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-azul.png") ?>" alt="voluntarios azul">
+                                    <img class="link-nosotros-hover" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-rojo.png") ?>" alt="voluntarios rojo">
+                                    <img class="link-nosotros-active" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-blanco.png") ?>" alt="voluntarios-blanco">
+                                    <h3 class="mt-3">Uniformes</h3>
+                                </a>
+                                <div class="col-md-2"></div>
+                                <a href="<?php echo get_permalink(get_page_by_path('nosotros/centro-cultural')); ?>" class="col-md-4 border-centro">
+                                    <img class="link-nosotros-normal" src="<?php echo get_theme_file_uri("img/nosotros-centro-azul.png") ?>" alt="centro azul">
+                                    <img class="link-nosotros-hover" src="<?php echo get_theme_file_uri("img/nosotros-centro-rojo.png") ?>" alt="centro rojo">
+                                    <img class="link-nosotros-active" src="<?php echo get_theme_file_uri("img/nosotros-centro-blanco.png") ?>" alt="centro blanco">
+                                    <h3 class="mt-3">Maquinarias</h3>
+                                </a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+   
+
+    
+
 </main>
 
 <?php get_footer(); ?>

@@ -1692,8 +1692,177 @@ footer{
 
 
 
+/* ----------------------------- POSTULACION ----------------------------- */
 
 
+.banner-postulacion{
+  position: relative;
+  background: url(../img/banner-postulacion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 70px 0px;
+  width: 100%;
+  height: 691px;
+  margin: 0;
+  h1{
+    color: white;
+  }
+  p{
+    color: white;
+  }
+  li{
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  footer {
+      padding: 30px 0 20px 0;
+  }
+  footer h1 {
+      font-size: 20px;
+  }
+  footer .contactar li a span{
+      font-size: 16px;
+  }
+
+   
+}
+
+@media screen and (max-width: 913px) {
+  footer .contactar li a span {
+      font-size: 13px;
+  }
+  footer .contactar i{
+    font-size: 18px;
+}
+
+
+}
+@media screen and (max-width: 767px) {
+
+  footer {
+      text-align: center;
+  }
+
+  footer .rapidos {
+      margin-bottom: 50px;
+  }
+
+  footer ul {
+      padding-left: 0rem !important;
+  }
+
+  footer .img-fluid{
+      margin-bottom: 50px;
+  }
+
+  footer .contactar{
+      margin-top: 40px;
+  }
+
+  footer .contactar li a span {
+      font-size: 20px;
+  }
+  footer .contactar i{
+    font-size: 24px;
+}
+
+}
+
+
+.bg-financiamiento{
+  position: relative;
+  background: url(../img/banner-financiamiento.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 50px 0px;
+  width: 100%;
+  height: 526px;
+  margin: 0;
+  h1{
+    color: white!important;
+    text-align: center;
+  }
+
+}
+
+/* ----------------------------- FINANCIAMIENTO ----------------------------- */
+
+.financiamiento{
+  h1{
+    color: #122555;
+  }
+  span{
+    font-weight: 600;
+  }
+}
+
+.financiamiento-links .container .row{
+
+  .col-md-4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      position: relative;
+      border: solid 1px $azul-marino;
+      text-decoration: none;
+      color: $azul-marino;
+      padding-top: 150px;
+      text-align: center;
+      background-color: #fff;
+      transition: all 0.3s ease;
+      img {
+          position: absolute;
+          top: 30px;
+          transition: opacity 0.3s ease;
+      }
+      .link-nosotros-hover {
+          opacity: 0;
+      }
+      .link-nosotros-active {
+        opacity: 0;
+    }
+      &:hover {
+        .link-nosotros-normal {
+          opacity: 0;
+          }
+        .link-nosotros-hover {
+          opacity: 1;
+        } 
+        border: $rojo solid 1px;
+        transform: scale(1.1);
+        color: $rojo;
+        border-radius: 10px;
+        z-index: 3;
+      }
+      &:active {
+        background-color: $rojo;
+        color: #fff;
+        .link-nosotros-normal {
+          opacity: 0;
+        }
+        .link-nosotros-hover {
+          opacity: 0;
+        }
+        .link-nosotros-active {
+          opacity: 1;
+          z-index: 5;
+        }
+      }
+  }
+  .border-voluntario {
+    border-radius: 10px;
+  }
+  .border-centro {
+    border-radius: 10px;
+
+  }
+}
 
 
 
