@@ -28,13 +28,17 @@ Template Name: Nosotros Secciones
             <section class="container mt-5">
                     <div class="col-md-10 mx-auto seccion-voluntarios-tab">
                         <div class="tab-boton-voluntarios">
-                            <input type="radio" id="humano" name="tabs" checked>
-                            <label class="tab" for="humano">Humano</label>
-                            <input type="radio" id="animal" name="tabs">
-                            <label class="tab" for="animal">Animal</label>
+                            <input type="radio" id="voluntario-humano" name="tabs-voluntarios" checked>
+                            <label class="tab" for="voluntario-humano">Humano</label>
+                            <input type="radio" id="voluntario-animal" name="tabs-voluntarios">
+                            <label class="tab" for="voluntario-animal">Animal</label>
                             <span class="slider"></span>
                         </div>
-                    </div>             
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <div class="row tab-voluntarios-content">
+                        </div>
+                    </div>
             </section>
         <?php elseif (is_page('brigada-juvenil')): ?>
             <!-- Estructura específica para "Brigada Juvenil" -->
