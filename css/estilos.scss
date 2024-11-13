@@ -1496,6 +1496,11 @@ header {
     text-decoration: none;
 
   }
+  p{
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+    
+  }
   
 }
 
@@ -1560,8 +1565,6 @@ text-decoration: none;
 }
 }
 
-
-
 .prevencion-background3{
   position: relative;
   background: url(../img/img-prevencion4.png);
@@ -1591,7 +1594,72 @@ color: white;
 }
 }
 
+footer{
+  border: 2px solid #BB2633;
+  padding: 30px;
+  .row{
+    display: flex;
+    align-items: center;
+  }
+}
+.fa-angle-double-right{
+  color: #1F3E90!important;
+  margin-right: 10px;
+}
+.fa-regular{
+  color: #1F3E90!important;
+  margin-right: 10px;
 
+}
+.fa-brands{
+  color: #1F3E90!important;
+  margin-right: 10px;
+
+}
+.listas a{
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  transition: all 0.4s ease 0s;
+
+}
+
+.listas a:hover{
+  letter-spacing: 2px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 10px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+.listas span{
+  font-size: 18px;
+}
+.listas li{
+  list-style: none;
+
+}
+
+.contactar{
+  span{
+    font-size: 24px;
+    font-weight: 500;
+  }
+  i{
+    font-size: 24px;
+
+  }
+}
+
+.creditos{
+  background-color: #122555;
+  padding: 30px 10px;
+  p{
+    color: white;
+    font-weight: 500;
+  }
+}
 
 
 
@@ -1788,6 +1856,9 @@ color: white;
     transform: translateX(100%);
   }
 }
+
+
+
 
 
 /* ----------------------------- Responsive ----------------------------- */

@@ -8,31 +8,32 @@
                 <div class="col-md-11 mx-auto">
                     <div class="row">
                         <div class="col-md-3">
-                        <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo2.png">
+                        <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-footer.png">
 
                         </div>
+                        <div class="col-md-1"></div>
                         <div class="col-md-3 rapidos">
-                            <h3 class="mb-4 ">UBICACIÓN</h3>
+                            <h4 class="mb-4 ">Navegación</h4>
                             <ul class="listas">
-                                <li class="mb-3"><i class="fa fa-angle-double-right"></i><span>Huérfanos 835, 901, Santiago, Chile 8320000</span></li>
+                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Inicio</span></li></a>
+                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Historia</span></li></a>
+                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Formación social</span></li></a>
+                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Postulación</span></li></a>
+                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Financiamiento</span></li></a>
+                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Nosotros</span></li></a>
+
 
 
                             </ul>
                         </div>
-                        <div class="col-md-3 utiles">
-                            <h1 class="mb-4">ENLACES ÚTILES</h1>
-                            <ul class="listas">
-                                <li class="mb-3"><a href="/reseller/nosotros"><i class="fa fa-angle-double-right"></i><span>Nosotros</span></a></li>
-                                <li class="mb-3"><a href="/reseller/contacto-empresas-2"><i class="fa fa-angle-double-right"></i><span>Contacto Empresarial</span></a></li>
-                                <li class="mb-3"><a href="/reseller/contacto-personas"><i class="fa fa-angle-double-right"></i><span>Contacto Personas</span></a></li>
-                            </ul>
-                        </div>
+                        <div class="col-md-1"></div>
+
                         <div class="col-md-3 contactar">
-                            <h1 class="mb-4">CONTACTO</h1>
                             <ul class="listas">
-                                <li class="mb-3"><a href=" "><i class="fa-regular fa-envelope"></i><span>clientes@prosellers.cl</span></a></li>
-                                <li class="mb-3"><a href=" "><i class="fa-brands fa-linkedin"></i><span>Agencia prosellers</span></a></li>
-                                <li class="mb-3"><a href="https://www.instagram.com/prosellers_cl/?hl=es-la"><i class="fa-brands fa-instagram"></i><span>@prosellers_cl</span></a></li>
+                                <li class="mb-3"><a href="https://www.instagram.com/prosellers_cl/?hl=es-la"><i class="fa-brands fa-instagram"></i><span>@Primeraquilpue</span></a></li>
+                                <li class="mb-3"><a href=" "><i class="fa-brands fa-facebook-f"></i><span>Primera bomberos Quilpué</span></a></li>
+                                <li class="mb-3"><a href=" "><i class="fa-brands fa-youtube"></i><span>Primeraquilpue</span></a></li>
+                                <li class="mb-3"><a href=" "><i class="fa-brands fa-twitter"></i><span>Primeraquilpue.cl</span></a></li>
 
                             </ul>
                         </div>
@@ -44,7 +45,22 @@
             </div>
         </footer>
         <div class="row creditos">
-            <p>Sitio desarrollado por Reseller - Derechos reservados © 2024</p>
+            <div class="col-md-11 mx-auto">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Primera compañía de bomberos de Quilpué “Esteban Santic”</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                        <p>Zenteno 770, Quilpué, Valparaíso</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2">
+                        <p>Creado por tricahue</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 </div>

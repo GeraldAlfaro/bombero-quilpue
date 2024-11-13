@@ -55,6 +55,23 @@ Template Name: Prevención
                 </div>
             </div>
         </div>
+        <div class="row mt-5">
+            <div class="col-md-12 mx-auto my-4">
+                <div class="row">
+                    <h1 class="pb-4">Capsulas informativas</h1>
+                    <div class="col-md-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jsVBZsH5JXI?si=r5EnXWZEokGTmbYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-6">
+                        <p>La Primera Compañía de Bomberos de Quilpué ha creado una serie de cápsulas informativas y capacitativas diseñadas especialmente para niños, con el objetivo de enseñarles sobre seguridad, prevención de incendios y el importante trabajo que realizan los bomberos en nuestra comunidad.</p>
+                        <br>
+                        <p>Estas cápsulas son recursos educativos que no solo buscan informar, sino también generar conciencia y fomentar una cultura de seguridad desde temprana edad. A continuación, podrás acceder a estos contenidos y compartirlos con tus alumnos, familiares o cualquier persona interesada en aprender sobre estos temas tan relevantes.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 </main>
