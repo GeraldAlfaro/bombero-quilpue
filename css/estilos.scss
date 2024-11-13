@@ -1595,11 +1595,40 @@ color: white;
 }
 
 footer{
+  position: relative;
+  margin-top: 60px;
   border: 2px solid #BB2633;
   padding: 30px;
   .row{
     display: flex;
     align-items: center;
+  }
+  .camion-footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -47px;
+    animation: camion 10s linear infinite;
+  }
+}
+@keyframes camion {
+  0% {
+    right: 0;
+    transform: none;
+  }
+  49%{
+    right: 100%;
+    transform: none;
+  }
+  50% {
+    right: 100%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  100% {
+    right: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
 }
 .fa-angle-double-right{
@@ -1805,7 +1834,7 @@ footer{
   }
 }
 
-.seccion-voluntarios-tab {
+.seccion-voluntarios-tab-botones {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1869,12 +1898,21 @@ footer{
   h5 {
     color: $azul-marino;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 1.30rem;
   }
   p {
     margin-top: 5px;
     color: $azul-marino;
+  }
+  .hr-voluntarios {
+    width: 20%;
+    display: grid;
+    place-self: center;
+    margin: 10px 0;
+    hr {
+      border-color: $rojo;
+    }
   }
 }
 
@@ -1891,7 +1929,18 @@ footer{
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+      background-color: $azul;
+      color: #fff;
+    }
   }
+  .active-voluntarios {
+    background-color: $rojo;
+    color: #fff;
+    border-radius: 50% 50%;
+  }
+  
 }
 
 

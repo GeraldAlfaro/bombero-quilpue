@@ -1548,6 +1548,8 @@ header {
 }
 
 footer {
+  position: relative;
+  margin-top: 60px;
   border: 2px solid #BB2633;
   padding: 30px;
 }
@@ -1555,7 +1557,32 @@ footer .row {
   display: flex;
   align-items: center;
 }
+footer .camion-footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -47px;
+  animation: camion 10s linear infinite;
+}
 
+@keyframes camion {
+  0% {
+    right: 0;
+    transform: none;
+  }
+  49% {
+    right: 100%;
+    transform: none;
+  }
+  50% {
+    right: 100%;
+    transform: scaleX(-1);
+  }
+  100% {
+    right: 0;
+    transform: scaleX(-1);
+  }
+}
 .fa-angle-double-right {
   color: #1F3E90 !important;
   margin-right: 10px;
@@ -1753,7 +1780,7 @@ footer .row {
   font-weight: 600;
 }
 
-.seccion-voluntarios-tab {
+.seccion-voluntarios-tab-botones {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1817,12 +1844,21 @@ footer .row {
 .post-voluntarios h5 {
   color: #122555;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 1.3rem;
 }
 .post-voluntarios p {
   margin-top: 5px;
   color: #122555;
+}
+.post-voluntarios .hr-voluntarios {
+  width: 20%;
+  display: grid;
+  place-self: center;
+  margin: 10px 0;
+}
+.post-voluntarios .hr-voluntarios hr {
+  border-color: #BB2633;
 }
 
 .tab-voluntarios-content .pagination {
@@ -1839,6 +1875,16 @@ footer .row {
   padding: 10px 15px;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab-voluntarios-content .pagination .pagination-button:hover {
+  background-color: #2C56C5;
+  color: #fff;
+}
+.tab-voluntarios-content .pagination .active-voluntarios {
+  background-color: #BB2633;
+  color: #fff;
+  border-radius: 50% 50%;
 }
 
 /* ----------------------------- Responsive ----------------------------- */

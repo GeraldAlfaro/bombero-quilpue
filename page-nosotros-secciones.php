@@ -25,8 +25,8 @@ Template Name: Nosotros Secciones
                     </div>
                 </div>
             </section>
-            <section class="container mt-5">
-                    <div class="col-md-10 mx-auto seccion-voluntarios-tab">
+            <section class="container mt-5 seccion-voluntarios-tab">
+                    <div class="col-md-10 mx-auto seccion-voluntarios-tab-botones">
                         <div class="tab-boton-voluntarios">
                             <input type="radio" id="voluntario-humano" name="tabs-voluntarios" checked>
                             <label class="tab" for="voluntario-humano">Humano</label>

@@ -159,39 +159,37 @@ function cargar_posts_por_categoria() {
   $query = new WP_Query($args);
 
   if ($query->have_posts()) {
-      while ($query->have_posts()) {
-          $query->the_post();
-          ?>
-          <article class="col-lg-3 col-sm-6 mb-4">
-              <div class="post-voluntarios">
-                <figure>
-                  <img class="voluntario" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-                </figure>
+    while ($query->have_posts()) {
+        $query->the_post();
+        ?>
+        <article class="col-lg-3 col-sm-6 mb-4">
+            <div class="post-voluntarios">
+              <figure>
+                <img class="voluntario" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                 <figcaption>
+                  <div class="hr-voluntarios"><hr></div>
                   <h5><?php the_title(); ?></h5>
                   <?php the_content(); ?>
                 </figcaption>
-              </div>
-            </article>
-          <?php
-      }
+              </figure>
+            </div>
+          </article>
+        <?php
+    }
 
-      // Mostrar controles de paginación
-      $total_pages = $query->max_num_pages;
-      if ($total_pages > 1) {
-          ?>
-          <div class="pagination">
-              <?php for ($i = 1; $i <= $total_pages; $i++) : ?>
-                  <button class="pagination-button" data-page="<?php echo $i; ?>">
-                      <?php echo $i; ?>
-                  </button>
-              <?php endfor; ?>
-          </div>
-          <?php
-      }
-  } else {
-      echo '<p>No hay posts disponibles en esta categoría.</p>';
-  }
+    // Paginación siempre dentro del resultado dinámico
+    $total_pages = $query->max_num_pages;
+    if ($total_pages > 1) {
+        echo '<div class="pagination">';
+        for ($i = 1; $i <= $total_pages; $i++) {
+            echo '<button class="pagination-button ' . ($i === $pagina ? 'active-voluntarios' : '') . '" data-page="' . $i . '">' . $i . '</button>';
+        }
+        echo '</div>';
+    }
+} else {
+    echo '<p>No hay posts disponibles en esta categoría.</p>';
+}
+
 
   wp_reset_postdata();
   wp_die();

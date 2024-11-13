@@ -4,6 +4,7 @@
 
 <div class="container-fluid">
         <footer>
+            <img class="camion-footer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/camion-footer.png" alt="">
             <div class="row">
                 <div class="col-md-11 mx-auto">
                     <div class="row">
