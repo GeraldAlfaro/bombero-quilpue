@@ -1944,8 +1944,30 @@ footer{
 }
 
 
+/* ---------------- Brigada Juvenil de la página nosotros --------------- */
 
+.brigada-juvenil-seccion {
+  display: flex;
+  align-items: center;
+}
 
+.links-brigada {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $rojo;
+    &:first-child{
+      margin-right: 30px;
+    }
+    img {
+      margin-right: 5px;
+    }
+  }
+}
 
 /* ----------------------------- Responsive ----------------------------- */
 @media (width < 990px) {
@@ -2030,6 +2052,10 @@ footer{
     }
     #buscador {
       margin-top: 40px;
+    }
+    .logo-brigada {
+      display: flex;
+      place-self: center;
     }
 }
 

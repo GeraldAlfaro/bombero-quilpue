@@ -42,7 +42,22 @@ Template Name: Nosotros Secciones
             </section>
         <?php elseif (is_page('brigada-juvenil')): ?>
             <!-- Estructura específica para "Brigada Juvenil" -->
-            <p>Contenido para Brigada Juvenil.</p>
+            <section class="container">
+                <div class="row brigada-juvenil-seccion">
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                        <img class="logo-brigada" src="<?php echo get_theme_file_uri("img/brigada_juvenil.png") ?>" alt="logo brigada">
+                    </div>
+                    <div class="col-xl-10 col-lg-8 col-md-8 col-sm-12">
+                        <h2>Brigada Juvenil</h2>
+                        <p class="mt-3">En la Brigada se realizan capacitaciones, cursos y academias bomberiles enfocado en captar voluntarios jovenes de la zona principlmente escolares para intruirlos y que pertenezcan a la primera compañía de bomberos de Quilpué.
+                        La Brigada Juvenil se encuentra a cargo del Instructor Sr. Mario Palavecino Rubio quien es el encargado de coordinar.</p>
+                        <div class="links-brigada">
+                            <a href=""><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-instagram.png") ?>" alt="instagram brigada">@brigada_primera</a>
+                            <a href=""><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-instagram.png") ?>" alt="facebook brigada">Brigada Juvenil Primera Compañia Quilpué </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         <?php elseif (is_page('casino-la-primera')): ?>
             <!-- Estructura específica para "Casino La Primera" -->
             <p>Contenido para Casino La Primera.</p>

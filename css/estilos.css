@@ -1887,6 +1887,30 @@ footer .camion-footer {
   border-radius: 50% 50%;
 }
 
+/* ---------------- Brigada Juvenil de la página nosotros --------------- */
+.brigada-juvenil-seccion {
+  display: flex;
+  align-items: center;
+}
+
+.links-brigada {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.links-brigada a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #BB2633;
+}
+.links-brigada a:first-child {
+  margin-right: 30px;
+}
+.links-brigada a img {
+  margin-right: 5px;
+}
+
 /* ----------------------------- Responsive ----------------------------- */
 @media (width < 990px) {
   .main-menu-icon {
@@ -1963,6 +1987,10 @@ footer .camion-footer {
   }
   #buscador {
     margin-top: 40px;
+  }
+  .logo-brigada {
+    display: flex;
+    place-self: center;
   }
 }
 @media (width < 600px) {
