@@ -140,4 +140,71 @@ function bomberojs_enqueue_style()
 }
 add_action('wp_enqueue_scripts', 'bomberojs_enqueue_style');
 
+
+function cargar_posts_por_categoria() {
+  // Obtener la categoría desde la solicitud AJAX
+  $categoria = sanitize_text_field($_POST['categoria'] ?? '');
+  $pagina = intval($_POST['pagina'] ?? 1); // Página actual (por defecto, 1)
+  $search_query = sanitize_text_field($_POST['search'] ?? '');
+
+  // Definir la consulta de posts
+  $args = [
+      'post_type' => 'post',
+      'posts_per_page' => 16, // Número de posts por página
+      'paged' => $pagina, // Página actual
+      'category_name' => $categoria, // Categoría basada en el slug
+      's' => $search_query // Agregar criterio de búsqueda
+  ];
+
+  $query = new WP_Query($args);
+
+  if ($query->have_posts()) {
+      while ($query->have_posts()) {
+          $query->the_post();
+          ?>
+          <article class="col-lg-3 col-sm-6 mb-4">
+              <div class="post-voluntarios">
+                <figure>
+                  <img class="voluntario" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                </figure>
+                <figcaption>
+                  <h5><?php the_title(); ?></h5>
+                  <?php the_content(); ?>
+                </figcaption>
+              </div>
+            </article>
+          <?php
+      }
+
+      // Mostrar controles de paginación
+      $total_pages = $query->max_num_pages;
+      if ($total_pages > 1) {
+          ?>
+          <div class="pagination">
+              <?php for ($i = 1; $i <= $total_pages; $i++) : ?>
+                  <button class="pagination-button" data-page="<?php echo $i; ?>">
+                      <?php echo $i; ?>
+                  </button>
+              <?php endfor; ?>
+          </div>
+          <?php
+      }
+  } else {
+      echo '<p>No hay posts disponibles en esta categoría.</p>';
+  }
+
+  wp_reset_postdata();
+  wp_die();
+}
+add_action('wp_ajax_cargar_posts_por_categoria', 'cargar_posts_por_categoria');
+add_action('wp_ajax_nopriv_cargar_posts_por_categoria', 'cargar_posts_por_categoria');
+
+
+function agregar_ajaxurl_js() {
+  echo '<script type="text/javascript">
+      var ajaxurl = "' . admin_url('admin-ajax.php') . '";
+  </script>';
+}
+add_action('wp_head', 'agregar_ajaxurl_js');
+
 ?>

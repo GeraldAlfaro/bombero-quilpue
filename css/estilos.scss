@@ -1781,11 +1781,48 @@ color: white;
   input[type="radio"]:checked + label {
     color: $texto-blanco;
   }
-  input[id="humano"]:checked ~ .slider {
+  input[id="voluntario-humano"]:checked ~ .slider {
     transform: translateX(0);
   }
-  input[id="animal"]:checked ~ .slider {
+  input[id="voluntario-animal"]:checked ~ .slider {
     transform: translateX(100%);
+  }
+}
+
+.post-voluntarios {
+  border: $rojo solid 1px;
+  padding: 25px;
+  text-align: center;
+  .voluntario {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h5 {
+    color: $azul-marino;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 1.30rem;
+  }
+  p {
+    margin-top: 5px;
+    color: $azul-marino;
+  }
+}
+
+.tab-voluntarios-content .pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  .pagination-button {
+    background: none;
+    color: $azul-marino;
+    font-size: $font-size-h4;
+    border: $azul-marino solid 1px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
   }
 }
 
