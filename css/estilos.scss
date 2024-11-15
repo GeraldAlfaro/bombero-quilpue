@@ -69,7 +69,7 @@ $font-size-h4: 25px;
   }
 }
 .row {
-  --bs-gutter-x: 1.5rem;
+  /* --bs-gutter-x: 1.5rem; */
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -2138,7 +2138,58 @@ footer{
   }
 }
 
+
+/* ---------------- Casino la primera de la página nosotros --------------- */
+
+.casino-seccion {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.links-casino {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $rojo;
+    &:not(:first-child){
+      margin-left: 30px;
+    }
+    img {
+      margin-right: 5px;
+    }
+  }
+}
+
+.boton-telefono-casino {
+  @include boton;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.google-maps-casino {
+  margin-top: 60px;
+}
+
 /* ----------------------------- Responsive ----------------------------- */
+@media (width < 1200px) {
+  .links-casino {
+    flex-direction: column;
+      margin-top: 0;
+      a {
+        margin-top: 20px;
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+  }
+}
+
 @media (width < 990px) {
   .main-menu-icon {
       display: inline-block;
@@ -2178,6 +2229,9 @@ footer{
   }
   .arriba-del-nav .nombre-compania {
       display: none;
+  }
+  .casino-content {
+    margin-top: 30px;
   }
 }
 
