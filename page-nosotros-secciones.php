@@ -82,7 +82,23 @@ Template Name: Nosotros Secciones
             </section>
         <?php elseif (is_page('centro-cultural')): ?>
             <!-- Estructura específica para "Centro Cultural" -->
-            <p>Contenido para Centro Cultural.</p>
+            <section class="container">
+                <div class="row centro-cultural-seccion">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+                        <img class="logo-brigada" src="<?php echo get_theme_file_uri("/img/centro-cultural-logo.png") ?>" alt="logo centro cultural">
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-8 col-sm-12 casino-content">
+                        <h2>Centro Cultural Lorenzo Lubet </h2>
+                        <p class="mt-3">Organización creada para colaborar en la gestión, promoción de la cultura y patrimonio de la Primera Compañía de Bomberos de Quilpué. Como medio de obtención de fondos</p>
+                        <div class="links-casino">
+                            <a href=""><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-instagram.png") ?>" alt="instagram casino">@centroculturallorenzolubet</a>
+                            <a href=""><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-instagram.png") ?>" alt="facebook casino">Centro Cultural Lorenzo Lubet</a>
+                            <a href=""><img src="<?php echo get_theme_file_uri("img/nosotros-correo.png") ?>" alt="correo casino">centrocultural@primeraquilpue.cl</a>
+                        </div>
+                        <a class="boton-donacion-centro" href="">Dona aquí!</a>
+                    </div>
+                </div>
+            </section>
         <?php endif; ?>
     </div>
 </main>

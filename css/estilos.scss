@@ -2176,6 +2176,22 @@ footer{
   margin-top: 60px;
 }
 
+/* ---------------- Centro cultural de la página nosotros --------------- */
+
+
+.centro-cultural-seccion {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.boton-donacion-centro {
+  @include boton;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  margin-top: 25px;
+}
 /* ----------------------------- Responsive ----------------------------- */
 @media (width < 1200px) {
   .links-casino {

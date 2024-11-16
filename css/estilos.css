@@ -2101,6 +2101,27 @@ footer .camion-footer {
   margin-top: 60px;
 }
 
+/* ---------------- Centro cultural de la página nosotros --------------- */
+.centro-cultural-seccion {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.boton-donacion-centro {
+  width: 200px;
+  color: white;
+  border-radius: 40px;
+  background-color: #BB2633;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: solid 2px white;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  margin-top: 25px;
+}
+
 /* ----------------------------- Responsive ----------------------------- */
 @media (width < 1200px) {
   .links-casino {
