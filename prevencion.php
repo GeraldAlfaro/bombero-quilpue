@@ -27,7 +27,7 @@ Template Name: Prevención
                     <h2 class="mb-5">¿Cómo actuar?</h2>
                     <div class="col-md-4">
 
-                        <a href="#">
+                        <a href="http://localhost/bomberos/prevencion/incendio/">
                             <div class="prevencion-background1">
                                 <h3>Incendio</h3>
 
@@ -35,7 +35,7 @@ Template Name: Prevención
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="#">
+                        <a href="http://localhost/bomberos/prevencion/material-peligroso/">
                             <div class="prevencion-background2">
                                 <h3>Material peligroso</h3>
 
@@ -44,7 +44,7 @@ Template Name: Prevención
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="#">
+                        <a href="http://localhost/bomberos/prevencion/rescate/">
                             <div class="prevencion-background3">
                                 <h3>Rescate</h3>
 
