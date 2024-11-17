@@ -1788,8 +1788,16 @@ footer .camion-footer {
 }
 
 /* ----------------------------- ESTRUCTURA TABS ----------------------------- */
+.prevencion h1 {
+  margin-bottom: 80px;
+}
+
 .tab-container li {
   all: unset;
+}
+
+.prevencion-tabs-content img {
+  width: 100%;
 }
 
 .tab-container {
