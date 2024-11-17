@@ -1355,6 +1355,7 @@ $font-size-h4: 25px;
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: $azul;
 }
 
 h2 {
@@ -2416,6 +2417,33 @@ footer{
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
+}
+
+/* ---------------- Mártires de la página historia --------------- */
+
+.historia-secciones .martires-content article p{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 7;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  width: 85%;
+}
+.historia-secciones .martires-content article div span{
+  font-size: 0.920rem;
+  color: gray;
+}
+.historia-secciones .martires-content article div{
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+.historia-secciones .martires-content article img{
+  width: 100%;
+}
+.boton-martires {
+  @include boton;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 /* ----------------------------- Responsive ----------------------------- */

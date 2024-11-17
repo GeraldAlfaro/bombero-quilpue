@@ -17,21 +17,21 @@ Template Name: Historia
                 </a>
             </div>
             <div class="col-xxl-3 col-xl-6 col-md-6">
-                <a href="" class="links-historia martires-bg">
+                <a href="<?php echo get_permalink(get_page_by_path('historia/martires')); ?>" class="links-historia martires-bg">
                     <img src="<?php echo get_theme_file_uri("img/martir-icon.png"); ?>" alt="martires">
                     <h2>Mártires</h2>
                     <p>Un mártir bombero es un bombero que ha fallecido mientras cumplía con su deber bomberil.</p>
                 </a>
             </div>
             <div class="col-xxl-3 col-xl-6 col-md-6">
-                <a href="" class="links-historia museo-bg">
+                <a href="<?php echo get_permalink(get_page_by_path('historia/museo-historico')); ?>" class="links-historia museo-bg">
                     <img src="<?php echo get_theme_file_uri("img/museo-icon.png"); ?>" alt="museo historico">
                     <h2>Museo histórico</h2>
                     <p>Museo de la historia de la primera compañía de Quilpué, que se encuentra en este mismo cuartel.</p>
                 </a>
             </div>
             <div class="col-xxl-3 col-xl-6 col-md-6">
-                <a href="" class="links-historia hitos-bg">
+                <a href="<?php echo get_permalink(get_page_by_path('historia/hitos-historicos')); ?>" class="links-historia hitos-bg">
                     <img src="<?php echo get_theme_file_uri("img/img-icon.png"); ?>" alt="hitos historicos">
                     <h2>Hitos históricos</h2>
                     <p>Hechos que marcaron la historia de la compañía desde sus inicios hasta el día de hoy.</p>

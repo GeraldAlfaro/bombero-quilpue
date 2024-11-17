@@ -11,7 +11,7 @@ Template Name: Nosotros
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1>Nosotros</h1>
+                    <h1 class="text-light">Nosotros</h1>
                     <p>La Primera compañía de bomberos de Quilpué nace un 8 de marzo de 1925. Cuenta con modernas unidades y un solido programa de preparación técnica.
                     Un grupo de vecinos quilpueínos, se reunieron en los salones del club “La Unión”, con un solo objetivo: fundar la Primera Compañía de Bomberos de Quilpué. Entre sus filas  se contaba con prestigiosos hombres como Don Esteban Santic y Don Lorenzo Lubet, entre otros; vecinos que se entregaron en cuerpo y alma, al desarrollo de esta compañía.</p>
                 </div>

@@ -15,7 +15,7 @@ Template Name: Nosotros Secciones
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <h1>Voluntarios compañía</h1>
+                            <h1 class="text-light">Voluntarios compañía</h1>
                         </div>
                         <div class="col-md-6">
                             <div class="buscador">
