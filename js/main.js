@@ -157,6 +157,7 @@ tabPanels.forEach((tab, index) => {
 });
 
 const switchTab = (e) => {
+    e.preventDefault();
   // Find the clicked Tab
   const clickedTab = e.target.closest("li");
   if (!clickedTab) return;

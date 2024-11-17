@@ -99,6 +99,45 @@ Template Name: Nosotros Secciones
                     </div>
                 </div>
             </section>
+            <section class="tab-container container">
+                <ul class="tab-menu">
+                    <li class="tab-generico active"><a href="#gmc">GMC</a></li>
+                    <li class="tab-generico"><a href="#uniformes">Uniformes</a></li>
+                    <li class="tab-generico"><a href="#pabellon">Pabellón patrio</a></li>
+                </ul>
+
+                <div class="bg-blanco">
+                    <div class="tab-panels">
+                        <div id="gmc" class="panel">
+                            <div class="prevencion-tabs-content row gmc-bg">
+                                <div class="prevencion-tab-item col-md-12 col-lg-6">
+                                    <h3 class="mb-4">Restauración Carro Reliquia GMC 1</h3>
+                                    <p>Se debe mencionar que a través de nuestra organización comunitaria, se permitió la obtención de recursos financieros que permitió el éxito de la entrega de la destacada unidad, la cual no estuvo ajena a inconvenientes, según se expone en el documental “Renacido del Olvido”, pieza audiovisual que fue exhibida en dependencias del liceo artístico Guillermo Groyenmeyer y que fue introducción para el ejercicio demostrativo que se llevo a cabo el pasado sábado 01 de junio, en conjunto con las demás instituciones y empresas involucradas en el proceso.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="uniformes" class="panel">
+                            <div class="prevencion-tabs-content row uniformes-bg">
+                                <div class="prevencion-tab-item col-md-12 col-lg-6">
+                                    <h3 class="mb-4">Recuperación indumentaria histórica de la Primera Compañía.(1925-2025)</h3>
+                                    <p>Se financian 90 uniformes de parada con todos sus implementos. Costo por uniforme $500.000 por unidad. Presentación de más de 60 bomberos en el aniversario centenario con su uniforme de parada.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pabellon" class="panel">
+                            <div class="prevencion-tabs-content row pabellon-bg">
+                                <div class="prevencion-tab-item col-md-12 col-lg-6">
+                                    <h3 class="mb-4">Restauración Pabellón Patrio</h3>
+                                    <p>Restauración del primer estandarte de la compañía, el cual data desde el año 1925 siendo este un regalo del voluntario Carlos Cavagnaro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
         <?php endif; ?>
     </div>
 </main>

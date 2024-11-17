@@ -34,7 +34,7 @@ $font-size-h4: 25px;
 .container-lg,
 .container-md,
 .container-sm {
-  --bs-gutter-x: 1.5rem;
+  /* --bs-gutter-x: 1.5rem; */
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -1875,11 +1875,13 @@ footer{
 
 .tab-container {
   width: 100%;
-  max-width: 1360px;
-
   display: flex;
   flex-direction: column;
-  margin-top: 320px;
+  margin-top: 50px;
+}
+
+.tab-container .bg-blanco {
+  background-color: #f7f7f7;
 }
 
 .tab-menu {
@@ -1915,7 +1917,7 @@ footer{
   border-right: 2px solid var(--clr-white);
 }
 .tab-menu > .tab-generico.active {
-  background-color: var(--clr-white);
+  background-color: #f7f7f7;
 }
 
 .tab-generico > a {
@@ -1965,13 +1967,12 @@ footer{
   opacity: 0.9;
 }
 
-.tab-container .bg-blanco {
-  background-color: white;
-}
-
 .tab-container .prevencion-tabs-content {
   display: flex;
   flex-direction: row;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .tab-container .prevencion-tab-item {
@@ -2002,7 +2003,6 @@ footer{
   -moz-box-shadow: 3px 7px 18px 4px rgba(0,0,0,0.09);
   box-shadow: 3px 7px 18px 4px rgba(0,0,0,0.09);
 }
-
 
 /* ----------------------------- Nosotros ----------------------------- */
 
@@ -2330,6 +2330,94 @@ footer{
   width: auto;
   margin-top: 25px;
 }
+
+.secciones-nosotros .tab-container .tab-panels {
+  color: #fff;
+  padding: 0;
+}
+
+.secciones-nosotros .tab-container .prevencion-tabs-content {
+  flex-direction: row-reverse;
+  padding: 100px;
+}
+
+.gmc-bg {
+  background-image: url(../img/gmc-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.uniformes-bg {
+  background-image: url(../img/uniformes-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pabellon-bg {
+  background-image: url(../img/pabellon-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* ----------------------------- Página historia ----------------------------- */
+
+
+.links-historia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 20px;
+  height: 290px;
+  max-height: 290px;
+  overflow: hidden;
+  h2 {
+    font-size: 1.75rem;
+    margin: 15px 0;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+.imagenes-bg {
+  background-image: url(../img/historia-imagenes-link-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.martires-bg {
+  background-image: url(../img/historia-martires-link-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.museo-bg {
+  background-image: url(../img/historia-museo-link-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.hitos-bg {
+  background-image: url(../img/historia-hitos-link-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
 /* ----------------------------- Responsive ----------------------------- */
 @media (width < 1200px) {
   .links-casino {
