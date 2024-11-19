@@ -15,9 +15,6 @@ $font-size-h4: 25px;
 
 
 
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -1435,12 +1432,14 @@ header {
     padding: 10px 20px;
     text-decoration: none;
     border: solid 2px white
+    
 }
 
 .boton-nav {
     @include boton;
     width: auto;
 }
+
 
 .barra-nav {
     -webkit-box-shadow: 0px 25px 25px -4px rgba(0,0,0,0.07);
@@ -1867,8 +1866,6 @@ footer{
 
 
 
-
-
 /* ----------------------------- ESTRUCTURA TABS ----------------------------- */
 
 .prevencion h1{
@@ -2017,6 +2014,48 @@ footer{
   -moz-box-shadow: 3px 7px 18px 4px rgba(0,0,0,0.09);
   box-shadow: 3px 7px 18px 4px rgba(0,0,0,0.09);
 }
+
+
+/* ----------------------------- MAQUINARIA PAGE ----------------------------- */
+
+.maquinaria-baja{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  h2{
+    text-align: center;
+    color: #BB2633;
+    margin-bottom: 20px;
+  }
+  h4{
+    text-align: center;
+    color: #122555;
+    margin: 30px 0px;
+  }
+  p{
+    text-align: center;
+    margin-bottom: 60px;
+
+  }
+}
+
+.socio-bg {
+  background-image: url(../img/donacion-haztesocio-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.donacion-bg {
+  background-image: url(../img/donacion-donacionunica-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
 
 /* ----------------------------- Nosotros ----------------------------- */
 

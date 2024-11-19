@@ -1928,6 +1928,44 @@ footer .camion-footer {
   box-shadow: 3px 7px 18px 4px rgba(0, 0, 0, 0.09);
 }
 
+/* ----------------------------- MAQUINARIA PAGE ----------------------------- */
+.maquinaria-baja {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.maquinaria-baja h2 {
+  text-align: center;
+  color: #BB2633;
+  margin-bottom: 20px;
+}
+.maquinaria-baja h4 {
+  text-align: center;
+  color: #122555;
+  margin: 30px 0px;
+}
+.maquinaria-baja p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.socio-bg {
+  background-image: url(../img/donacion-haztesocio-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.donacion-bg {
+  background-image: url(../img/donacion-donacionunica-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
 /* ----------------------------- Nosotros ----------------------------- */
 .bg-nosotros {
   background-image: url(../img/nosotros-background.png);

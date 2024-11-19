@@ -54,9 +54,8 @@
                     <div class="col-md-3">
                         <p>Zenteno 770, Quilpué, Valparaíso</p>
                     </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2">
-                        <p>Creado por tricahue</p>
+                    <div class="col-md-3">
+                        <p>Creado por Tricahue y MakonCreate</p>
                     </div>
                 </div>
             </div>
