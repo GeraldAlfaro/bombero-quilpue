@@ -23,6 +23,7 @@ Template Name: Nosotros
         </div>
     </section>
     <section class="nosotros-links">
+        <img class="decoracion-nosotros" src="<?php echo get_theme_file_uri("img/decoracion-nosotros.png") ?>" alt="decoración de la página nosotros">
         <div class="container">
             <div class="row">
                 <a href="<?php echo get_permalink(get_page_by_path('nosotros/voluntarios-de-la-compania')); ?>" class="col-md-3 border-voluntario espaciado-responsive">

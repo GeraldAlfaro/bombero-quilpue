@@ -932,7 +932,7 @@ $font-size-h4: 25px;
 
 .text-light {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+    color: #fff !important;
   }
   
   .text-dark {
@@ -2047,6 +2047,10 @@ footer{
     height: auto;
 }
 
+.nosotros-links {
+  position: relative;
+}
+
 .nosotros-links .container .row{
     -webkit-box-shadow: 3px 25px 37px -21px rgba(0,0,0,0.45);
     -moz-box-shadow: 3px 25px 37px -21px rgba(0,0,0,0.45);
@@ -2123,7 +2127,11 @@ footer{
     }
 }
 
-
+.decoracion-nosotros {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 /* ----------------------------- Secciones de la página nosotros ----------------------------- */
 
 .bg-voluntarios {
@@ -2449,6 +2457,8 @@ footer{
 .historia-secciones .martires-content article div{
   padding: 0 15px;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .historia-secciones .martires-content article img{
   width: 100%;
