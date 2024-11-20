@@ -31,7 +31,7 @@
                     <strong>Primera compañía de bomberos de Quilpué “Esteban Santic”</strong>
                 </figcaption>
             </figure>
-            <a class="boton-nav" href="<?php echo esc_url(home_url('portafolio/')); ?>">Dona aquí!</a>
+            <a class="boton-nav" href="<?php echo esc_url(home_url('donar')); ?>">Dona aquí!</a>
             <div class="main-menu-logo-section">
                     <img class="main-menu-icon" src="<?php echo get_theme_file_uri("img/ui.png") ?>" alt="responsive-navbar">
             </div>

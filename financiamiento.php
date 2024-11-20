@@ -49,14 +49,14 @@ Template Name: Financiamiento
                     <div class="row ">
                         <h1 class="mb-5">Costos de equipo</h1>
                         <div class="col-md-1"></div>
-                                <a href="<?php echo get_permalink(get_page_by_path('nosotros/voluntarios-de-la-compania')); ?>" class="col-md-4 border-voluntario espaciado-responsive">
+                                <a href="<?php echo get_permalink(get_page_by_path('financiamiento/uniformes')); ?>" class="col-md-4 border-voluntario espaciado-responsive">
                                     <img class="link-nosotros-normal" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-azul.png") ?>" alt="voluntarios azul">
                                     <img class="link-nosotros-hover" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-rojo.png") ?>" alt="voluntarios rojo">
                                     <img class="link-nosotros-active" src="<?php echo get_theme_file_uri("img/nosotros-voluntarios-blanco.png") ?>" alt="voluntarios-blanco">
                                     <h3 class="mt-3">Uniformes</h3>
                                 </a>
                                 <div class="col-md-2"></div>
-                                <a href="<?php echo get_permalink(get_page_by_path('nosotros/centro-cultural')); ?>" class="col-md-4 border-centro">
+                                <a href="<?php echo get_permalink(get_page_by_path('financiamiento/maquinarias')); ?>" class="col-md-4 border-centro">
                                     <img class="link-nosotros-normal" src="<?php echo get_theme_file_uri("img/nosotros-centro-azul.png") ?>" alt="centro azul">
                                     <img class="link-nosotros-hover" src="<?php echo get_theme_file_uri("img/nosotros-centro-rojo.png") ?>" alt="centro rojo">
                                     <img class="link-nosotros-active" src="<?php echo get_theme_file_uri("img/nosotros-centro-blanco.png") ?>" alt="centro blanco">
