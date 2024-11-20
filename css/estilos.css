@@ -1469,6 +1469,54 @@ header {
   font-weight: 400;
 }
 
+/*------------------------------------ INDEX PAGE ---------------------------------------- */
+.ultimas-emergencias {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  color: #122555;
+  display: flex;
+  align-items: center;
+}
+.ultimas-emergencias svg {
+  margin-right: 15px;
+}
+
+.tarjeta-urgencias {
+  margin-top: 30px;
+  padding: 25px;
+  box-shadow: 3px 6px 15px 1px rgba(0, 0, 0, 0.11);
+  border-radius: 20px;
+}
+
+.estructura-urgencias {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #BB2633;
+  margin-bottom: 20px;
+}
+.estructura-urgencias a {
+  text-decoration: none;
+  color: #1F3E90;
+}
+.estructura-urgencias a span {
+  font-size: 28px;
+  font-weight: 600;
+}
+.estructura-urgencias i {
+  font-size: 24px;
+  margin-left: 15px;
+}
+.estructura-urgencias figure {
+  text-align: end;
+}
+.estructura-urgencias figure span {
+  font-weight: 200;
+  color: #1F3E90;
+}
+
+.estructura-urgencias .row :first-child {
+  margin-bottom: 10px;
+}
+
 /* ----------------------------- Prevención ----------------------------- */
 .prevencion-background1 {
   position: relative;

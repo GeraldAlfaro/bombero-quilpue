@@ -1509,6 +1509,63 @@ header {
   
 }
 
+
+/*------------------------------------ INDEX PAGE ---------------------------------------- */
+
+
+
+.ultimas-emergencias{
+  font-size: 32px!important;
+  font-weight: 600!important;
+  color: #122555;
+  display: flex;
+  align-items: center;
+  svg{
+    margin-right: 15px;
+  }
+}
+
+.tarjeta-urgencias{
+  margin-top: 30px;
+  padding: 25px;
+  -webkit-box-shadow: 3px 6px 15px 1px rgba(0,0,0,0.11);
+-moz-box-shadow: 3px 6px 15px 1px rgba(0,0,0,0.11);
+box-shadow: 3px 6px 15px 1px rgba(0,0,0,0.11);
+border-radius: 20px;
+}
+
+.estructura-urgencias{
+  padding-bottom: 15px;
+  border-bottom: 2px solid #BB2633;
+  margin-bottom: 20px;
+  a{
+    text-decoration: none;
+    color: #1F3E90;
+    span{
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+  }
+  i{
+    font-size: 24px;
+    margin-left: 15px;
+  }
+  figure{
+    text-align: end;
+    span{
+      font-weight: 200;
+      color: #1F3E90;
+    }
+  }
+}
+
+.estructura-urgencias .row{
+  :first-child{
+    margin-bottom: 10px;
+  }
+
+}
 /* ----------------------------- Prevención ----------------------------- */
 
 .prevencion-background1{
