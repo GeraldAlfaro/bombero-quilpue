@@ -22,6 +22,11 @@
   margin-left: auto;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -2396,7 +2401,52 @@ footer .camion-footer {
   margin-top: 20px;
 }
 
+.historia-secciones .banco-imagenes .row a {
+  position: relative;
+}
+.historia-secciones .banco-imagenes .row a img {
+  opacity: 0.7;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.historia-secciones .banco-imagenes .row a p {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1rem;
+  left: 20px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.historia-secciones .banco-imagenes .row .columnas-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.historia-secciones .banco-imagenes .row .columnas-imagenes:nth-child(2) {
+  flex-direction: column;
+}
+.historia-secciones .banco-imagenes .row .columnas-imagenes:nth-child(3) {
+  flex-direction: column;
+}
+
+.overlay {
+  display: inline-flex;
+  /* background: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(18, 4, 143) 90%); */
+  background: rgb(18, 37, 85);
+  background: linear-gradient(0deg, rgb(3, 29, 95) 20%, rgba(65, 63, 74, 0.8099614846) 100%);
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+}
+
 /* ----------------------------- Responsive ----------------------------- */
+@media (width < 1400px) {
+  .historia-secciones .banco-imagenes .row {
+    --bg-gutter-x: 1rem;
+  }
+}
 @media (width < 1200px) {
   .links-casino {
     flex-direction: column;
@@ -2450,6 +2500,17 @@ footer .camion-footer {
   .casino-content {
     margin-top: 30px;
   }
+  .historia-secciones .banco-imagenes .row {
+    --bs-gutter-x: 1.5rem;
+  }
+  .historia-secciones .banco-imagenes .row .columnas-imagenes:nth-child(2) {
+    flex-direction: column;
+    gap: 21%;
+  }
+  .historia-secciones .banco-imagenes .row .columnas-imagenes:nth-child(3) {
+    flex-direction: row;
+    gap: 19%;
+  }
 }
 @media (width < 768px) {
   .bg-nosotros .col-md-4 {
@@ -2494,6 +2555,9 @@ footer .camion-footer {
   }
 }
 @media (width < 600px) {
+  .historia-secciones h2 {
+    text-align: center;
+  }
   .arriba-del-nav {
     height: auto;
   }
@@ -2509,5 +2573,15 @@ footer .camion-footer {
   }
   .camion-footer {
     animation: camion 10s linear infinite;
+  }
+  .historia-secciones .banco-imagenes .row {
+    --bs-gutter-x: 0;
+    padding: 0 20px;
+  }
+  .historia-secciones .banco-imagenes .row .columnas-imagenes {
+    margin-bottom: 20px;
+  }
+  .historia-secciones .banco-imagenes .row .columnas-imagenes:nth-child(3) {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=estilos.css.map */
