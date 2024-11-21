@@ -12,7 +12,7 @@ Template Name: Home
 <section class="container-fluid">
     <div class="row">
     <?php
-echo do_shortcode('[smartslider3 slider="2"]');
+echo do_shortcode('[smartslider3 slider="3"]');
 ?>
     </div>
 </section>

@@ -181,3 +181,10 @@ const switchTab = (e) => {
 
 tabsContainer.addEventListener("click", switchTab);
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    Fancybox.bind('[data-fancybox="gallery"]', {
+    
+    });
+});
