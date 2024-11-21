@@ -39,11 +39,11 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <div class="row estructura-urgencias">
                             <div class="col-md-12">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-lg-4">
                                         <a href="https://x.com/primeraquilpue"><span><?php the_title(); ?></span></a>
                                     </div>
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-4">
+                                    
+                                    <div class="col-lg-8">
                                         <figure>
                                             <span><?php the_time('F jS, Y'); ?></span>
                                             <a href="https://x.com/primeraquilpue"><i class="fa-brands fa-x-twitter"></i></a>

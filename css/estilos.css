@@ -1470,6 +1470,10 @@ header {
 }
 
 /*------------------------------------ INDEX PAGE ---------------------------------------- */
+iframe {
+  width: 100%;
+}
+
 .ultimas-emergencias {
   font-size: 32px !important;
   font-weight: 600 !important;
@@ -1517,6 +1521,35 @@ header {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 991px) {
+  .estructura-urgencias figure {
+    text-align: start !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .estructura-urgencias {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  .estructura-urgencias a span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .estructura-urgencias p {
+    text-align: start !important;
+    font-size: 0.9rem;
+  }
+  .estructura-urgencias i {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .estructura-urgencias figure {
+    text-align: start !important;
+  }
+  .estructura-urgencias figure span {
+    font-size: 1.2rem !important;
+  }
+}
 /* ----------------------------- Prevención ----------------------------- */
 .prevencion-background1 {
   position: relative;
@@ -1524,7 +1557,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 401px;
+  width: 90%;
   height: 163px;
   margin: 0;
   padding: 0;
@@ -1544,6 +1577,7 @@ header {
 .prevencion-background1 h3 {
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 .prevencion-background2 {
@@ -1552,7 +1586,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 401px;
+  width: 90%;
   height: 163px;
   margin: 0;
   padding: 0;
@@ -1572,6 +1606,7 @@ header {
 .prevencion-background2 h3 {
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 .prevencion-background3 {
@@ -1580,7 +1615,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 401px;
+  width: 90%;
   height: 163px;
   margin: 0;
   padding: 0;
@@ -1599,8 +1634,93 @@ header {
 }
 .prevencion-background3 h3 {
   color: white;
+  text-align: center;
 }
 
+@media screen and (max-width: 991px) {
+  .prevencion-background1 {
+    padding: 10px;
+  }
+  .prevencion-background1 h3 {
+    font-size: 1.6rem;
+  }
+  .prevencion-background2 {
+    padding: 10px;
+  }
+  .prevencion-background2 h3 {
+    font-size: 1.6rem;
+  }
+  .prevencion-background3 {
+    padding: 10px;
+  }
+  .prevencion-background3 h3 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .prevencion {
+    text-align: center;
+  }
+  .prevencion-background1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .prevencion-background2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .prevencion-background3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  iframe {
+    margin-bottom: 20px;
+  }
+  .tab-generico > a {
+    padding: 18px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .prevencion {
+    padding: 10px;
+  }
+  .tab-panels {
+    padding: 28px !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .tab-generico > a {
+    font-size: 13px;
+  }
+  .tab-generico > a .tab-panels {
+    padding: 18px !important;
+  }
+  .tab-menu {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tab-generico > a {
+    padding: 14px !important;
+  }
+  .tab-generico > a .tab-panels {
+    padding: 10px !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .tab-generico > a {
+    padding: 10px !important;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tab-generico > a {
+    padding: 7px !important;
+  }
+}
 footer {
   position: relative;
   margin-top: 60px;
@@ -1714,6 +1834,41 @@ footer .camion-footer {
   color: white;
 }
 
+@media screen and (max-width: 874px) {
+  .banner-postulacion {
+    height: 741px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-postulacion {
+    padding: 70px 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  li {
+    text-align: center;
+    list-style: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-postulacion {
+    padding: 70px 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+}
+/* ----------------------------- FOOTER RESPONSIVE ----------------------------- */
 @media screen and (max-width: 1199px) {
   footer {
     padding: 30px 0 20px 0;
@@ -1840,6 +1995,36 @@ footer .camion-footer {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .financiamiento .container {
+    padding: 10px;
+  }
+  .financiamiento .col-md-6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .financiamiento .col-md-6 span {
+    text-align: center;
+  }
+  .financiamiento .col-md-6 p {
+    font-size: 0.9rem;
+  }
+  .financiamiento .col-md-5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .financiamiento .col-md-5 span {
+    text-align: center;
+  }
+  .financiamiento .col-md-5 p {
+    font-size: 0.9rem;
+  }
+  .bg-financiamiento {
+    height: 726px;
+  }
+}
 /* ----------------------------- ESTRUCTURA TABS ----------------------------- */
 .prevencion h1 {
   margin-bottom: 80px;
