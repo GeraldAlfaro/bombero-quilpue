@@ -84,6 +84,14 @@ function timelinejs_enqueue() {
 add_action('wp_enqueue_scripts', 'martiresjs_enqueue');
 
 
+function voluntariosajaxjs_enqueue() {
+  if (is_page('voluntarios-de-la-compania')) {
+    wp_enqueue_script('voluntarios', get_template_directory_uri() . '/js/voluntarios.js', array());
+}
+}
+
+add_action('wp_enqueue_scripts', 'voluntariosajaxjs_enqueue');
+
 
 function cargar_posts_por_categoria() {
   // Obtener la categoría desde la solicitud AJAX

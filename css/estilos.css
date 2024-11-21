@@ -2746,6 +2746,14 @@ footer .camion-footer {
 }
 
 /* ----------------------------- Responsive ----------------------------- */
+@media (width < 1500px) {
+  .logo {
+    width: 100px;
+    height: 101px;
+    z-index: 2;
+    margin-top: 0;
+  }
+}
 @media (width < 1400px) {
   .historia-secciones .banco-imagenes .row {
     --bs-gutter-x: 1rem;
@@ -2868,8 +2876,41 @@ footer .camion-footer {
   .container-sm {
     --bs-gutter-x: 0;
   }
+  .pagina-historia h1 {
+    text-align: center;
+  }
+  .historia-secciones h1 {
+    text-align: center;
+  }
   .historia-secciones h2 {
     text-align: center;
+  }
+  .bg-nosotros {
+    padding: 80px 30px 170px 30px;
+  }
+  .bg-nosotros h1 {
+    text-align: center;
+  }
+  .brigada-juvenil-seccion {
+    padding: 0 20px;
+  }
+  .brigada-juvenil-seccion h2 {
+    text-align: center;
+  }
+  .casino-seccion {
+    padding: 0 20px;
+  }
+  .casino-seccion h2 {
+    text-align: center;
+  }
+  .centro-cultural-seccion {
+    padding: 0 20px;
+  }
+  .centro-cultural-seccion h2 {
+    text-align: center;
+  }
+  .secciones-nosotros .tab-container .prevencion-tabs-content {
+    padding: 50px 20px;
   }
   .arriba-del-nav {
     height: auto;

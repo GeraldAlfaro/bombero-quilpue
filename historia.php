@@ -5,7 +5,7 @@ Template Name: Historia
 ?>
 <?php get_header(); ?>
 
-<main>
+<main class="pagina-historia">
     <section class="container">
     <h1 class="my-5">Historia</h1>
         <div class="row">
