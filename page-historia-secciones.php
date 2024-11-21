@@ -18,18 +18,19 @@ Template Name: Historia Secciones
             <section class="container my-5 banco-imagenes">
                 <?php
                     // Configurar los argumentos para WP_Query
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // Asegurar que $paged tenga el valor correcto
                     $args = array(
                         'category_name' => 'banco-imagenes',
                         'paged' => $paged,
-                        'posts_per_page' => 8,
+                        'posts_per_page' => 1,
+                        
                     );
                     // Realizar la consulta
                     $query = new WP_Query($args);
                     // Comprobar si hay posts
                     if ($query->have_posts()):
                     // Iterar sobre los posts
-                    while ($query->have_posts()):
-                        $query->the_post(); ?>
+                    while ($query->have_posts()): $query->the_post(); ?>
                     <h2 class="mb-5"><?php the_title(); ?></h2>
                     <div class="row">
                                 <div class="col-lg-4 col-md-6 columnas-imagenes">
@@ -137,7 +138,17 @@ Template Name: Historia Secciones
                             </a>
                         </div>
                     </div>
-                <?php endwhile;
+                <?php endwhile; ?>
+
+                    <!-- Paginación -->
+                    <div class="pagination mt-5">
+                        <?php
+                        if (function_exists('wp_pagenavi')) {
+                            wp_pagenavi(array('query' => $query)); // WP-PageNavi usa esta función
+                        }
+                        ?>
+                    </div>
+                    <?php
                     else: ?>
                     <p>No hay imágenes disponibles en este momento.</p>
                 <?php endif;
@@ -198,10 +209,44 @@ Template Name: Historia Secciones
             </section>
         <?php elseif (is_page('hitos-historicos')): ?>
             <!-- Estructura específica para "Hitos Históricos" -->
-            <p>Contenido para Centro Cultural.</p>
-        <?php endif; ?>
+            <div class="container mt-5">
+                <h1>Hitos Históricos</h1>
+            </div>
+            <section class="timeline">
+                <ol>
+                    <?php
+                        // Configurar los argumentos para WP_Query
+                        $args = array(
+                            'category_name' => 'hitos-historicos',
+                        );
+                        // Realizar la consulta
+                        $query = new WP_Query($args);
+                        // Comprobar si hay posts
+                        if ($query->have_posts()):
+                        // Iterar sobre los posts
+                        while ($query->have_posts()):
+                            $query->the_post(); ?>
+                            <li>
+                                <div>
+                                    <time><?php the_title(); ?></time> 
+                                    <article class="contenido">
+                                        <?php the_content(); ?>
+                                        <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                    </article>
+                                </div>
+                            </li>
+                            <li></li>
+                     <?php endwhile;
+                        else: ?>
+                        <p>No hay imágenes disponibles en este momento.</p>
+                    <?php endif;
 
-        <?php the_content(); ?>
+                    // Restaurar la consulta original
+                    wp_reset_postdata();
+                    ?>
+                    </ol>
+                </section>
+            <?php endif; ?>
     </div>
 </main>
 

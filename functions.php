@@ -33,7 +33,7 @@ add_action('wp_enqueue_scripts', 'css_general');
 
 // ++++++++++++++++++ Fancybox +++++++++++++++++++
 
-add_action('wp_enqueue_scripts', 'fancybox_js');
+/* add_action('wp_enqueue_scripts', 'fancybox_js');
 
 function fancybox_js()
 {
@@ -47,25 +47,37 @@ add_action('wp_enqueue_scripts', 'fancybox_css');
 function fancybox_css()
 {
   wp_enqueue_style('fancybox_css', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css', array(), '5.0');
-}
+} */
 
 
 function bomberojs_enqueue_style()
 {
     wp_enqueue_script(
-        'main',
-        get_parent_theme_file_uri('js/main.js')
+      'main',
+      get_parent_theme_file_uri('js/main.js')
+    );
+    wp_enqueue_style(
+      'cssfancybox',
+      get_parent_theme_file_uri('assets/fancybox.css')
     );
     wp_enqueue_script(
-      'cssnosotros',
-      get_parent_theme_file_uri('css/nosotros.css')
-  );
+      'jsfancybox',
+      get_parent_theme_file_uri('assets/fancybox.umd.js')
+    );
 }
 add_action('wp_enqueue_scripts', 'bomberojs_enqueue_style');
 
 function martiresjs_enqueue() {
   if (is_page('martires')) {
     wp_enqueue_script('martires', get_template_directory_uri() . '/js/martires.js', array());
+}
+}
+
+add_action('wp_enqueue_scripts', 'martiresjs_enqueue');
+
+function timelinejs_enqueue() {
+  if (is_page('hitos-historicos')) {
+    wp_enqueue_script('timeline', get_template_directory_uri() . '/js/timeline.js', array());
 }
 }
 
