@@ -81,8 +81,15 @@ function timelinejs_enqueue() {
 }
 }
 
-add_action('wp_enqueue_scripts', 'martiresjs_enqueue');
+add_action('wp_enqueue_scripts', 'timelinejs_enqueue');
 
+function timelinemaquinariasjs_enqueue() {
+  if (is_page('vehiculos')) {
+    wp_enqueue_script('timeline', get_template_directory_uri() . '/js/timeline.js', array());
+}
+}
+
+add_action('wp_enqueue_scripts', 'timelinemaquinariasjs_enqueue');
 
 function voluntariosajaxjs_enqueue() {
   if (is_page('voluntarios-de-la-compania')) {

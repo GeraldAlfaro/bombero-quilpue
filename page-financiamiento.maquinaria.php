@@ -130,7 +130,7 @@ get_header();
                 <div class="row mt-5">
                     <div class="col-md-8 mx-auto maquinaria-baja">
                         <h2>Valor de equipamiento de maquinarias</h2>
-                        <iframe width="855" height="422" src="https://www.youtube.com/embed/jsVBZsH5JXI?si=r5EnXWZEokGTmbYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ep_UGpymF_g?si=SHXM8tqws4ETy66E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <h4>Unidad 13 de Rescate CR-1, "Mártir Secretario Nicolás Campalans Leiva".</h4>
                         <p>Corresponde a un carro Renault midlum 240 DXI camiva, el cual presta servicio como segunda máquina de combate a incendios estructurales en nuestra Compañía y presta apoyo en la dotación de unidades de combate a incendios forestales del Cuerpo de Bomberos de Quilpué.</p>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/maquinaria-unidad3.png" alt="Imagen de Unidad 11 Mártir Edwin Guajardo" class="img-fluid">

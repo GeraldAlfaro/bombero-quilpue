@@ -55,6 +55,9 @@
             <a class="link-nav" href="<?php echo esc_url(home_url('financiamiento')); ?>">
                 <li>Financiamiento</li>
             </a>
+            <a class="link-nav" href="<?php echo esc_url(home_url('vehiculos')); ?>">
+                <li>Vehículos</li>
+            </a>
             <a class="link-nav" href="<?php echo esc_url(home_url('nosotros')); ?>">
                 <li>Nosotros</li>
             </a>

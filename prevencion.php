@@ -60,7 +60,7 @@ Template Name: Prevención
                 <div class="row">
                     <h1 class="pb-4">Capsulas informativas</h1>
                     <div class="col-md-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jsVBZsH5JXI?si=r5EnXWZEokGTmbYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ep_UGpymF_g?si=SHXM8tqws4ETy66E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-md-2"></div>
                     <div class="col-md-6">
