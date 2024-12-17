@@ -15,12 +15,11 @@
                         <div class="col-md-3 rapidos">
                             <h4 class="mb-4 ">Navegación</h4>
                             <ul class="listas">
-                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Inicio</span></li></a>
-                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Historia</span></li></a>
-                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Formación social</span></li></a>
-                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Postulación</span></li></a>
-                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Financiamiento</span></li></a>
-                                <a href="#"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Nosotros</span></li></a>
+                                <a href="/bomberos/home" target="_blank"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Inicio</span></li></a>
+                                <a href="/bomberos/historia" target="_blank"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Historia</span></li></a>
+                                <a href="/bomberos/postulacion" target="_blank"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Postulación</span></li></a>
+                                <a href="/bomberos/financiamiento" target="_blank"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Financiamiento</span></li></a>
+                                <a href="/bomberos/nosotros" target="_blank"><li class="mb-2"><i class="fa fa-angle-double-right"></i><span>Nosotros</span></li></a>
 
 
 
@@ -30,10 +29,10 @@
 
                         <div class="col-md-3 contactar">
                             <ul class="listas">
-                                <li class="mb-3"><a href="https://www.instagram.com/prosellers_cl/?hl=es-la"><i class="fa-brands fa-instagram"></i><span>@Primeraquilpue</span></a></li>
-                                <li class="mb-3"><a href=" "><i class="fa-brands fa-facebook-f"></i><span>Primera bomberos Quilpué</span></a></li>
-                                <li class="mb-3"><a href=" "><i class="fa-brands fa-youtube"></i><span>Primeraquilpue</span></a></li>
-                                <li class="mb-3"><a href=" "><i class="fa-brands fa-twitter"></i><span>Primeraquilpue.cl</span></a></li>
+                                <li class="mb-3"><a href="https://www.instagram.com/bomberosquilpue/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i><span>@Primeraquilpue</span></a></li>
+                                <li class="mb-3"><a href="https://www.facebook.com/bomberosquilpue.cl/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i><span>Primera bomberos Quilpué</span></a></li>
+                                <li class="mb-3"><a href=" "><i class="fa-brands fa-youtube" target="_blank"></i><span>Primeraquilpue</span></a></li>
+                                <li class="mb-3"><a href=" "><i class="fa-brands fa-square-x-twitter" target="_blank"></i><span>Primeraquilpue.cl</span></a></li>
 
                             </ul>
                         </div>
