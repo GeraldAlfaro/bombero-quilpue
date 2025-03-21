@@ -112,27 +112,23 @@ get_header();
             <div class="container my-5">
                 <h1><?php the_title(); ?></h1>
                 <div class="row">
-                    <div class="col-md-5">
-                        <h4 class="mb-4">Unidad 12 "Mártir Eladio Leiva Bastias"</h4>
-                        <p>Corresponde a un carro Renault Midlum 210 Camiva Eurofire año 2004 el cual presta servicio como segunda máquina de combate a incendios estructurales en nuestra Compañía y presta apoyo en la dotación de unidades de combate a incendios forestales del Cuerpo de Bomberos de Quilpué.</p>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/maquinaria-unidad1.png" alt="Imagen de Unidad 12 Mártir Eladio Leiva Bastias" class="img-fluid">
-
+                <div class="col-md-5">
+                        <h4 class="mb-4">Máquina 11 "Mártir Edwin Guajardo"</h4>
+                        <p>Destinada a combate de incendios estructurales y vehiculares Primera Compañía de Bomberos de Quilpué "Bomba Esteban Santic"</p>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/maquinaria-unidad2.png" alt="Imagen de Unidad 11 Mártir Edwin Guajardo" class="img-fluid">
                     </div>
                     <div class="col-md-2"></div>
                     <div class="col-md-5">
-                        <h4 class="mb-4">Unidad 11 "Mártir Edwin Guajardo"</h4>
-                        <p>Destinada a combate de incendios estructurales y vehiculares Primera Compañía de Bomberos de Quilpué "Bomba Esteban Santic"</p>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/maquinaria-unidad2.png" alt="Imagen de Unidad 11 Mártir Edwin Guajardo" class="img-fluid">
-
+                        <h4 class="mb-4">Máquina 12 "Mártir Eladio Leiva Bastias"</h4>
+                        <p>Corresponde a un carro Renault Midlum 210 Camiva Eurofire año 2004 el cual presta servicio como segunda máquina de combate a incendios estructurales en nuestra Compañía y presta apoyo en la dotación de unidades de combate a incendios forestales del Cuerpo de Bomberos de Quilpué.</p>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/maquinaria-unidad1.png" alt="Imagen de Unidad 12 Mártir Eladio Leiva Bastias" class="img-fluid">
                     </div>
                 </div>   
 
                 <div class="row mt-5">
                     <div class="col-md-8 mx-auto maquinaria-baja">
-                        <h2>Valor de equipamiento de maquinarias</h2>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ep_UGpymF_g?si=SHXM8tqws4ETy66E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h4>Unidad 13 de Rescate CR-1, "Mártir Secretario Nicolás Campalans Leiva".</h4>
-                        <p>Corresponde a un carro Renault midlum 240 DXI camiva, el cual presta servicio como segunda máquina de combate a incendios estructurales en nuestra Compañía y presta apoyo en la dotación de unidades de combate a incendios forestales del Cuerpo de Bomberos de Quilpué.</p>
+                        <h4>Máquina 13 de Rescate CR-1, "Mártir Secretario Nicolás Campalans Leiva".</h4>
+                        <p>Corresponde a un carro Renault midlum 240 DXI camiva, el cual presta servicio como segunda máquina de combate a incendios estructurales en nuestra Compañía y presta apoyo en la dotación de máquinas de combate a incendios forestales del Cuerpo de Bomberos de Quilpué.</p>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/maquinaria-unidad3.png" alt="Imagen de Unidad 11 Mártir Edwin Guajardo" class="img-fluid">
 
 

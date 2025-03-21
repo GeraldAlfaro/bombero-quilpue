@@ -53,7 +53,7 @@ Template Name: Nosotros Secciones
                         La Brigada Juvenil se encuentra a cargo del Instructor Sr. Mario Palavecino Rubio quien es el encargado de coordinar.</p>
                         <div class="links-brigada">
                             <a href="https://www.instagram.com/brigada_primera/" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-instagram.png") ?>" alt="instagram brigada">@brigada_primera</a>
-                            <a href="https://web.facebook.com/brigadajuvenil.primeracompania/" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-facebook.png") ?>" alt="facebook brigada">Brigada Juvenil Primera Compañia Quilpué </a>
+                            <a href="https://www.facebook.com/people/Brigada-Juvenil-Juventud-y-Disciplina-Primera-CompañÍa/100071150199124/" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-facebook.png") ?>" alt="facebook brigada">Brigada Juvenil Primera Compañia Quilpué </a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ Template Name: Nosotros Secciones
                             <a href="https://web.facebook.com/p/Casino-de-Bomberos-La-Primera-100063860993474/?_rdc=1&_rdr" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-facebook.png") ?>" alt="facebook casino">Casino de Bomberos "La Primera"</a>
                             <a href="mailto:casinodebomberoslaprimera@gmail.com" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-correo.png") ?>" alt="correo casino">casinodebomberoslaprimera@gmail.com</a>
                         </div>
-                        <a class="boton-telefono-casino" href=""><img class="icono-boton me-3" src="<?php echo get_theme_file_uri("img/phone.png") ?>" alt="icono telefono"> (32) 363 2854</a>
+                        <a class="boton-telefono-casino" href="tel:+569323632854"><img class="icono-boton me-3" src="<?php echo get_theme_file_uri("img/phone.png") ?>" alt="icono telefono"> (32) 363 2854</a>
                     </div>
                 </div>
             </section>
@@ -91,11 +91,10 @@ Template Name: Nosotros Secciones
                         <h2>Centro Cultural Lorenzo Lubet </h2>
                         <p class="mt-3">Organización creada para colaborar en la gestión, promoción de la cultura y patrimonio de la Primera Compañía de Bomberos de Quilpué. Como medio de obtención de fondos</p>
                         <div class="links-casino">
-                            <a href="" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-instagram.png") ?>" alt="instagram casino">@centroculturallorenzolubet</a>
-                            <a href="" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-instagram.png") ?>" alt="facebook casino">Centro Cultural Lorenzo Lubet</a>
+                            <a href="https://www.instagram.com/centroculturallorenzolubet/" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-instagram.png") ?>" alt="instagram casino">@centroculturallorenzolubet</a>
+                            <a href="https://www.facebook.com/p/Centro-Cultural-Lorenzo-Lubet-100064790436680/" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-brigada-facebook.png") ?>" alt="facebook casino">Centro Cultural Lorenzo Lubet</a>
                             <a href="" target="_blank"><img src="<?php echo get_theme_file_uri("img/nosotros-correo.png") ?>" alt="correo casino">centrocultural@primeraquilpue.cl</a>
                         </div>
-                        <a class="boton-donacion-centro" href="">Dona aquí!</a>
                     </div>
                 </div>
             </section>

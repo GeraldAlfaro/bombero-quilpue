@@ -16,6 +16,7 @@ Template Name: Vehiculos
                         // Configurar los argumentos para WP_Query
                         $args = array(
                             'category_name' => 'maquinaria-timeline',
+                            'posts_per_page' => -1,
                         );
                         // Realizar la consulta
                         $query = new WP_Query($args);
@@ -29,7 +30,7 @@ Template Name: Vehiculos
                                     <time><?php the_title(); ?></time> 
                                     <article class="contenido">
                                         <?php the_content(); ?>
-                                        <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                        <?php the_post_thumbnail('full', array('class' => 'img-fluid img-redondeada')); ?>
                                     </article>
                                 </div>
                             </li>

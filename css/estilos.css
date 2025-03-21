@@ -1386,12 +1386,13 @@ header {
   width: 160px;
   height: 161px;
   margin-top: 60px;
-  z-index: 2;
+  position: relative;
+  z-index: 10;
 }
 
 .logo-100 {
   width: 90px;
-  height: 81px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 20px;
@@ -1417,6 +1418,7 @@ header {
 .barra-nav {
   box-shadow: 0px 25px 25px -4px rgba(0, 0, 0, 0.07);
   background-color: #fff;
+  z-index: 2;
 }
 
 .barra-nav ul {
@@ -1435,6 +1437,7 @@ header {
   text-decoration: none;
   color: #000;
   padding: 40px;
+  z-index: 1;
 }
 .link-nav:hover {
   background-color: #BB2633;
@@ -2410,6 +2413,7 @@ footer .camion-footer {
   border: #BB2633 solid 1px;
   padding: 25px;
   text-align: center;
+  height: 510px;
 }
 .post-voluntarios .voluntario {
   width: 100%;
@@ -2914,31 +2918,35 @@ footer .camion-footer {
 }
 
 /* ----------------------------- Vehiculos ----------------------------- */
-.historia-maquinarias {
-  /* .section SECTION
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  /* TIMELINE
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  /* GENERAL MEDIA QUERIES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.img-redondeada {
+  border-radius: 10px;
 }
-.historia-maquinarias .section {
+
+/* .section SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
   padding: 50px 0;
 }
-.historia-maquinarias .section .container {
+
+.section .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-.historia-maquinarias .section h1 {
+
+.section h1 {
   font-size: 2.5rem;
   line-height: 1.25;
 }
-.historia-maquinarias .section h2 {
+
+.section h2 {
   font-size: 1.3rem;
 }
-.historia-maquinarias .timeline {
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
   position: relative;
   white-space: nowrap;
   max-width: 1400px;
@@ -2948,30 +2956,36 @@ footer .camion-footer {
   grid-template-columns: 320px auto;
   grid-gap: 20px;
 }
-.historia-maquinarias .timeline::before,
-.historia-maquinarias .timeline::after {
+
+.timeline::before,
+.timeline::after {
   content: "";
   top: 0;
   bottom: 30px;
   width: 100px;
   z-index: 2;
 }
-.historia-maquinarias .timeline::after {
+
+.timeline::after {
   right: 0;
   background: linear-gradient(270deg, var(--timeline-gradient));
 }
-.historia-maquinarias .timeline::before {
+
+.timeline::before {
   left: 340px;
   background: linear-gradient(90deg, var(--timeline-gradient));
 }
-.historia-maquinarias .timeline ol::-webkit-scrollbar {
+
+.timeline ol::-webkit-scrollbar {
   height: 12px;
 }
-.historia-maquinarias .timeline ol::-webkit-scrollbar-thumb,
-.historia-maquinarias .timeline ol::-webkit-scrollbar-track {
+
+.timeline ol::-webkit-scrollbar-thumb,
+.timeline ol::-webkit-scrollbar-track {
   border-radius: 92px;
 }
-.historia-maquinarias .timeline ol {
+
+.timeline ol {
   font-size: 0;
   padding: 550px 0 30px 0;
   transition: all 1s;
@@ -2979,7 +2993,8 @@ footer .camion-footer {
   scroll-snap-type: x mandatory;
   scrollbar-color: #fff #122555;
 }
-.historia-maquinarias .timeline ol li {
+
+.timeline ol li {
   position: relative;
   display: inline-block;
   list-style-type: none;
@@ -2988,13 +3003,16 @@ footer .camion-footer {
   background: #BB2633;
   scroll-snap-align: start;
 }
-.historia-maquinarias .timeline ol li:last-child {
+
+.timeline ol li:last-child {
   width: 340px;
 }
-.historia-maquinarias .timeline ol li:not(:first-child) {
+
+.timeline ol li:not(:first-child) {
   margin-left: 14px;
 }
-.historia-maquinarias .timeline ol li:not(:last-child)::after {
+
+.timeline ol li:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -3007,10 +3025,11 @@ footer .camion-footer {
   background: #BB2633;
   z-index: 1;
 }
-.historia-maquinarias .timeline ol li div {
+
+.timeline ol li div {
   position: absolute;
-  left: 31px;
-  width: 280px;
+  left: 13px;
+  width: 320px;
   padding: 15px 20px;
   font-size: 1rem;
   white-space: normal;
@@ -3018,7 +3037,8 @@ footer .camion-footer {
   background: #1F3E90;
   border-radius: 10px;
 }
-.historia-maquinarias .timeline ol li div::before {
+
+.timeline ol li div::before {
   content: "";
   position: absolute;
   top: 100%;
@@ -3027,28 +3047,33 @@ footer .camion-footer {
   height: 0;
   border-style: solid;
 }
-.historia-maquinarias .timeline ol li:nth-child(odd) div {
+
+.timeline ol li:nth-child(odd) div {
   top: -16px;
   transform: translateY(-100%);
   border-radius: 10px;
 }
-.historia-maquinarias .timeline ol li:nth-child(odd) div::before {
+
+.timeline ol li:nth-child(odd) div::before {
   top: 100%;
   left: 46%;
   border-width: 8px 8px 0;
   border-color: #1F3E90 transparent transparent transparent;
 }
-.historia-maquinarias .timeline ol li:nth-child(even) div {
+
+.timeline ol li:nth-child(even) div {
   top: calc(100% + 16px);
 }
-.historia-maquinarias .timeline ol li:nth-child(even) div::before {
+
+.timeline ol li:nth-child(even) div::before {
   top: -5px;
   left: 46%;
   border-width: 8px 8px 8px 8px;
   border-color: #1F3E90 transparent #1F3E90 #1F3E90;
   transform: rotate(45deg);
 }
-.historia-maquinarias .timeline time {
+
+.timeline time {
   display: block;
   font-size: 1.4rem;
   font-weight: bold;
@@ -3056,30 +3081,34 @@ footer .camion-footer {
   color: #fff;
   text-align: center;
 }
-.historia-maquinarias .timeline .contenido {
+
+.timeline .contenido {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
-.historia-maquinarias .timeline .contenido img {
+
+.timeline .contenido img {
   margin-bottom: 20px;
 }
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 800px) {
-  .historia-maquinarias .timeline {
+  .timeline {
     display: block;
   }
-  .historia-maquinarias .timeline::before,
-  .historia-maquinarias .timeline::after {
+  .timeline::before,
+  .timeline::after {
     width: 50px;
   }
-  .historia-maquinarias .timeline::before {
+  .timeline::before {
     left: 0;
   }
-  .historia-maquinarias .timeline .info {
+  .timeline .info {
     display: none;
   }
 }
-
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
@@ -3123,6 +3152,9 @@ footer .camion-footer {
   }
   .links-casino a:not(:first-child) {
     margin-left: 0;
+  }
+  .post-voluntarios {
+    height: auto;
   }
 }
 @media (width < 990px) {
@@ -3291,5 +3323,8 @@ footer .camion-footer {
   }
   .historia-secciones .banco-imagenes .row .columnas-imagenes:nth-child(3) {
     flex-direction: column;
+  }
+  .post-voluntarios {
+    margin: 0px 20px;
   }
 }/*# sourceMappingURL=estilos.css.map */

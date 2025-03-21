@@ -27,13 +27,13 @@
                         </div>
                         <div class="col-md-1"></div>
 
-                        <div class="col-md-3 contactar">
+                        <div class="col-md-4 contactar">
                             <ul class="listas">
-                                <li class="mb-3"><a href="https://www.instagram.com/bomberosquilpue/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i><span>@Primeraquilpue</span></a></li>
-                                <li class="mb-3"><a href="https://www.facebook.com/bomberosquilpue.cl/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i><span>Primera bomberos Quilpué</span></a></li>
-                                <li class="mb-3"><a href=" "><i class="fa-brands fa-youtube" target="_blank"></i><span>Primeraquilpue</span></a></li>
-                                <li class="mb-3"><a href=" "><i class="fa-brands fa-square-x-twitter" target="_blank"></i><span>Primeraquilpue.cl</span></a></li>
-
+                                <li class="mb-3"><a href="https://www.instagram.com/primeraquilpue/" target="_blank"><i class="fa-brands fa-instagram"></i><span>@Primeraquilpue</span></a></li>
+                                <li class="mb-3"><a href="https://www.facebook.com/primeraquilpue/" target="_blank"><i class="fa-brands fa-facebook-f"></i><span>Primera bomberos Quilpué</span></a></li>
+                                <li class="mb-3"><a href="https://www.youtube.com/@primeraquilpue" target="_blank"><i class="fa-brands fa-youtube"></i><span>Primeraquilpue</span></a></li>
+                                <li class="mb-3"><a href="https://x.com/i/flow/login?redirect_after_login=%2Fprimeraquilpue" target="_blank"><i class="fa-brands fa-square-x-twitter"></i><span>Primeraquilpue.cl</span></a></li>
+                                <li class="mb-3"><a href="mailto:administrador@primeraquilpue.cl" target="_blank"><i class="fa-solid fa-envelope me-2" style="color: #1F3E90"></i><span>administrador@primeraquilpue.cl</span></a></li>
                             </ul>
                         </div>
 

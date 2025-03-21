@@ -46,20 +46,14 @@ echo do_shortcode('[smartslider3 slider="3"]');
                                     <div class="col-lg-8">
                                         <figure>
                                             <span><?php the_time('F jS, Y'); ?></span>
-                                            <a href="https://x.com/primeraquilpue"><i class="fa-brands fa-x-twitter"></i></a>
-
                                         </figure>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <p><?php the_content(); ?></p>
-
                                 </div>
                             </div>
                         </div>
-
-
-
                     <?php endwhile; ?>
                     <?php else: ?>
                     <?php endif; ?>

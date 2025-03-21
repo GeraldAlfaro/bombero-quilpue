@@ -27,7 +27,7 @@ Template Name: Prevención
                     <h2 class="mb-5">¿Cómo actuar?</h2>
                     <div class="col-md-4">
 
-                        <a href="http://localhost/bomberos/prevencion/incendio/">
+                        <a href="http://localhost/bomberos/prevencion/incendio/"> <!-- arregla los links al subir el sitio -->
                             <div class="prevencion-background1 ">
                                 <h3>Incendio</h3>
 

@@ -18,7 +18,7 @@ Template Name: Postulación
                         <h1>¿Quieres ser bombero/a?</h1>
                         <p class="mt-3">Si deseas incorporarte a una institución comprometida con el servicio público de emergencias voluntario y capacitarte para ser uno más de nuestras filas, debes acercarte a nuestro cuartel ubicado en calle Zenteno 770, centro de Quilpué, en donde te informarán del completo proceso para ingresar a nuestra Compañía. Requisitos mínimos para postular:</p>
                         <ul class="mt-5">
-                            <li class="mb-4">Tener a lo menos 17 años de edad a Octubre del 2024.</li>
+                            <li class="mb-4">Tener a lo menos 17 años.</li>
                             <li class="mb-4">Estar egresado de enseñanza media o estar cursando ultimo año de ésta.</li>
                             <li class="mb-4" >Poseer salud y estado físico compatible con la actividad bomberil.</li>
                             <li class="mb-4">Perfil Psicológico compatible con la labor.</li>
