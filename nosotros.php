@@ -16,8 +16,8 @@ Template Name: Nosotros
                     Un grupo de vecinos quilpueínos, se reunieron en los salones del club “La Unión”, con un solo objetivo: fundar la Primera Compañía de Bomberos de Quilpué. Entre sus filas  se contaba con prestigiosos hombres como Don Esteban Santic y Don Lorenzo Lubet, entre otros; vecinos que se entregaron en cuerpo y alma, al desarrollo de esta compañía.</p>
                 </div>
                 <div class="col-md-4">
-                    <a class="boton-nosotros" href=""><img class="icono-boton me-3" src="<?php echo get_theme_file_uri("img/phone.png") ?>" alt="icono telefono">(32) 291 0029</a>
-                    <a class="boton-nosotros mt-3" href=""><img class="icono-boton me-3" src="<?php echo get_theme_file_uri("img/location.png") ?>" alt="icono location">Ubicación</a>
+                    <a class="boton-nosotros" href="tel:322910029"><img class="icono-boton me-3" src="<?php echo get_theme_file_uri("img/phone.png") ?>" alt="icono telefono">(32) 291 0029</a>
+                    <a class="boton-nosotros mt-3" href="https://maps.app.goo.gl/tgGgLGhmrvVrizmP7"><img class="icono-boton me-3" src="<?php echo get_theme_file_uri("img/location.png") ?>" alt="icono location">Ubicación</a>
                 </div>
             </div>
         </div>

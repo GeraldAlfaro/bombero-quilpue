@@ -1443,6 +1443,11 @@ header {
     
 }
 
+.soap {
+    @include boton;
+    width: auto;
+}
+
 .boton-nav {
     @include boton;
     width: auto;

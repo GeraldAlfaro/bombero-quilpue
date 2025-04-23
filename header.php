@@ -34,6 +34,7 @@
             <div class="main-menu-logo-section">
                     <img class="main-menu-icon" src="<?php echo get_theme_file_uri("img/ui.png") ?>" alt="responsive-navbar">
             </div>
+            <a class="soap" href="https://www.soapbomberos.cl/yo-apoyo/1-compania-quilpue">Dona aquí!</a>
         </div>
     </div>
     <nav class="barra-nav">

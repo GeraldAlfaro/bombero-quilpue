@@ -54,7 +54,7 @@
                         <p>Zenteno 770, Quilpué, Valparaíso</p>
                     </div>
                     <div class="col-md-3">
-                        <p>Creado por Tricahue y MakonCreate</p>
+                        <p>Creado por Tricahue, Gerald Alfaro y Jorge Mosqueira</p>
                     </div>
                 </div>
             </div>

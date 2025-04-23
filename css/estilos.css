@@ -1404,6 +1404,17 @@ header {
   margin: 0;
 }
 
+.soap {
+  width: 200px;
+  color: white;
+  border-radius: 40px;
+  background-color: #BB2633;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: solid 2px white;
+  width: auto;
+}
+
 .boton-nav {
   width: 200px;
   color: white;
